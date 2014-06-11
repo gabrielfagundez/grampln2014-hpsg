@@ -161,6 +161,7 @@ predicen := verbo &
 duda := verbo &
 [ ORT “duda” ].
 
+
 ;;; Adjetivos
 
 perdido := adjetivo & 
@@ -184,6 +185,7 @@ principal := adjetivo &
 ofrecidos := adjetivo &
 [ ORT “ofrecidos” ].
 
+
 ;;; Preposiciones
 
 a := preposicion & 
@@ -201,10 +203,12 @@ con := preposicion &
 en := preposicion &
 [ ORT “en” ].
 
+
 ;;; Conjuncion
 
 y := conjuncion &
 [ ORT "y" ].
+
 
 ;;; Adverbios
 
@@ -216,6 +220,7 @@ frecuentemente := adverbio &
 
 ya := adverbio &
 [ ORT “ya” ]. 
+
 
 ;;; Pronombre
 
