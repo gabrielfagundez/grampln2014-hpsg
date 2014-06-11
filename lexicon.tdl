@@ -1,0 +1,224 @@
+;;; Sustantivos
+
+matematicas := sustantivo &
+[ ORT “matemáticas ].
+
+invitados := sustantivo &
+[ ORT “invitados” ].
+
+conferencia := sustantivo &
+[ ORT “conferencia” ].
+
+noche := sustantivo &
+[ ORT “noche” ].
+
+estudiante := sustantivo &
+[ ORT "estudiante" ].
+
+estudiantes := sustantivo &
+[ ORT "estudiantes" ].
+
+libros := sustantivo & 
+[ ORT "libros" ].
+
+libro := sustantivo & 
+[ ORT "libro" ].
+
+bote := sustantivo & 
+[ ORT "bote" ].
+
+mar := sustantivo & 
+[ ORT "mar" ].
+
+vela := sustantivo & 
+[ ORT "vela" ].
+
+biblioteca := sustantivo & 
+[ ORT "biblioteca" ].
+
+bibliotecaria := sustantivo &
+[ ORT "bibliotecaria" ].
+
+comprobante := sustantivo &
+[ ORT "comprobante" ].
+
+gramatica := sustantivo & 
+[ ORT "gramática" ].
+
+profesores := sustantivo &
+[ ORT “profesores” ].
+
+tiempo := sustantivo &
+[ ORT “tiempo” ].
+
+atletas := sustantivo &
+[ ORT “atletas” ].
+
+carreras := sustantivo &
+[ ORT “carreras” ].
+
+solvencia := sustantivo /
+[ ORT “solvencia” ].
+
+estilo := sustantivo &
+[ ORT “estilo” ].
+
+jueza := sustantivo &
+[ ORT “jueza” ].
+
+testigo := sustantivo &
+[ ORT “testigo” ].
+
+sala := sustantivo &
+[ ORT “sala” ].
+
+audiencias := sustantivo &
+[ ORT “audiencias” ].
+
+sacerdotisas := sustantivo &
+[ ORT “sacerdotisas” ].
+
+sacrificios := sustantivo &
+[ ORT “sacrificios” ].
+
+dioses := sustantivo &
+[ ORT “dioses” ].
+
+adivinas := sustantivo &
+[ ORT “adivinas” ].
+
+el-sust := sustantivo &
+[ ORT “él” ].
+
+mi := sustantivo &
+[ ORT “mi” ].
+
+futuro := sustantivo &
+[ ORT “futuro” ].
+
+afirmación := sustantivo &
+[ ORT “afirmación” ].
+
+;;; Determinantes
+
+el := determinante & 
+[ ORT "el" ].
+
+ese := determinante & 
+[ ORT "ese" ].
+
+la := determinante & 
+[ ORT "la" ].
+
+las := determinante &
+[ ORT “las” ].
+
+los := determinante &
+[ ORT “los” ].
+
+esas := determinante &
+[ ORT “esas” ].
+
+
+;;; Verbos
+
+ofrecen := verbo &
+[ ORT “ofrecen” ].
+
+entrega := verbo & 
+[ ORT "entrega" ].
+
+llegan := verbo &
+[ ORT “llegan” ].
+
+retiran := verbo & 
+[ ORT "retiran" ].
+
+es := verbo & 
+[ ORT "es" ].
+
+son := verbo & 
+[ ORT "son" ].
+
+comparten := verbo & 
+[ ORT "comparten" ].
+
+navega := verbo & 
+[ ORT "navega" ].
+
+fueron := verbo &
+[ ORT “fueron” ].
+
+ganan := verbo &
+[ ORT “ganan” ].
+
+interroga := verbo &
+[ ORT “interroga” ].
+
+predicen := verbo &
+[ ORT “predicen” ].
+
+duda := verbo &
+[ ORT “duda” ].
+
+;;; Adjetivos
+
+perdido := adjetivo & 
+[ ORT "perdido" ].
+
+importantes := adjetivo & 
+[ ORT "importantes" ].
+
+entregado := adjetivo & 
+[ ORT "entregado" ].
+
+compartidos := adjetivo & 
+[ ORT "compartidos" ].
+
+competente := adjetivo &
+[ ORT “competente” ].
+
+principal := adjetivo &
+[ ORT “principal” ].
+
+ofrecidos := adjetivo &
+[ ORT “ofrecidos” ].
+
+;;; Preposiciones
+
+a := preposicion & 
+[ ORT "a" ].
+
+por := preposicion & 
+[ ORT "por" ].
+
+de := preposicion &
+[ ORT “de” ].
+
+con := preposicion &
+[ ORT “con” ].
+
+en := preposicion &
+[ ORT “en” ].
+
+;;; Conjuncion
+
+y := conjuncion &
+[ ORT "y" ].
+
+;;; Adverbios
+
+recientemente := adverbio & 
+[ ORT "recientemente" ].
+
+frecuentemente := adverbio & 
+[ ORT "frecuentemente" ].
+
+ya := adverbio &
+[ ORT “ya” ]. 
+
+;;; Pronombre
+
+su := pronombre &
+[ ORT “su” ].
+
