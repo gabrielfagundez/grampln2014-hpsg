@@ -99,6 +99,7 @@ futuro := sustantivo &
 afirmación := sustantivo &
 [ ORT “afirmación” ].
 
+
 ;;; Determinantes
 
 el := determinante & 
@@ -200,6 +201,9 @@ de := preposicion &
 con := preposicion &
 [ ORT “con” ].
 
+su := preposicion &
+[ ORT “su” ].
+
 en := preposicion &
 [ ORT “en” ].
 
@@ -220,10 +224,3 @@ frecuentemente := adverbio &
 
 ya := adverbio &
 [ ORT “ya” ]. 
-
-
-;;; Pronombre
-
-su := pronombre &
-[ ORT “su” ].
-
