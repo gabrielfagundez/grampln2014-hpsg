@@ -12,6 +12,14 @@ val-cat := *top* &
 pos := *top* &
 [ MOD *list* ].
 
+fnominal := expresion &
+[ HEAD sustantivo,
+  SPR < [ HEAD determinante ] > ].
+
+fverbal := expresion &
+[ HEAD verbo,
+  SPR < [ HEAD sustantivo ] > ].
+
 ;;; Tercer nivel
 
 sustantivo := pos.
