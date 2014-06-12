@@ -1,0 +1,52 @@
+;;; Segundo nivel
+
+expresion := *top* &
+[ ORT *dlist*,
+  HEAD pos
+  VAL val-cat ].
+
+val-cat := *top* &
+[ SPR *list*,
+  COMPS *list* ].
+
+pos := *top* &
+[ MOD *list* ].
+
+;;; Tercer nivel
+
+sustantivo := pos.
+
+verbo := pos.
+
+determinante := pos.
+
+adverbio := pos.
+
+preposicion := pos.
+
+adjetivo := pos.
+
+conjuncion := pos.
+
+;;; Tipos basicos
+
+string := *top*.
+
+*list* := *top*.
+
+*ne-list* := *list* &
+[ FIRST *top*,
+  REST *list* ].
+
+*null* := *list*.
+
+*dlist* := *top* &
+[ LIST *list*,
+  LAST *list* ].
+
+*null-dlist* := *dlist* &
+[ LIST #last,
+  LAST #last ].
+
+*ne-dlist* := *dlist* &
+[ LIST *ne-list* ].
