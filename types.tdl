@@ -2,11 +2,8 @@
 
 expresion := *top* &
 [ ORT *dlist*,
-  HEAD pos
-  VAL val-cat ].
-
-val-cat := *top* &
-[ SPR *list*,
+  HEAD pos,
+  SPR *list*,
   COMPS *list* ].
 
 pos := *top* &
@@ -19,6 +16,7 @@ fnominal := expresion &
 fverbal := expresion &
 [ HEAD verbo,
   SPR < [ HEAD sustantivo ] > ].
+
 
 ;;; Tercer nivel
 
@@ -35,6 +33,7 @@ preposicion := pos.
 adjetivo := pos.
 
 conjuncion := pos.
+
 
 ;;; Tipos basicos
 
