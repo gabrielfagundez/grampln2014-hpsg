@@ -33,15 +33,42 @@ palabra := expresion &
 
 sustantivo := palabra &
 [ HEAD sust,
-  SPR < frase & [ HEAD det ] > ].
+  SPR < frase & [ HEAD det ] >,
+  COMPS < > ].
 
 verbo := palabra &
 [ HEAD vb,
   SPR < frase & [ HEAD sust ] > ].
 
+verbo-intrans := verbo &
+[ COMPS < > ].
+
+frase-nominal := frase &
+[ HEAD sust,
+  SPR < > ].
+
+frase-prep := frase &
+[ HEAD prep,
+  SPR < > ].
+
+verbo-trans-n := verbo &
+[ COMPS < frase-nominal > ].
+
+verbo-trans-p := verbo &
+[ COMPS < frase-prep > ].
+
+verbo-ditrans-np := verbo &
+[ COMPS < frase-nominal,
+          frase-prep > ].
+
+verbo-ditrans-pp := verbo &
+[ COMPS < frase-nominal,
+          frase-nominal > ].
+
 determinante := palabra &
 [ HEAD det,
-  SPR < > ].
+  SPR < >,
+  COMPS < > ].
 
 adverbio := palabra &
 [ HEAD adv,
@@ -49,7 +76,8 @@ adverbio := palabra &
 
 preposicion := palabra &
 [ HEAD prep,
-  SPR < > ].
+  SPR < >,
+  COMPS < frase-nominal > ].
 
 adjetivo := palabra &
 [ HEAD adj,
@@ -71,14 +99,3 @@ string := *top*.
   REST *list* ].
 
 *null* := *list*.
-
-*dlist* := *top* &
-[ LIST *list*,
-  LAST *list* ].
-
-*null-dlist* := *dlist* &
-[ LIST #last,
-  LAST #last ].
-
-*ne-dlist* := *dlist* &
-[ LIST *ne-list* ].

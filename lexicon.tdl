@@ -123,43 +123,43 @@ esas := determinante &
 
 ;;; Verbos
 
-ofrecen := verbo &
+ofrecen := verbo-ditrans-np &
 [ ORTH "ofrecen" ].
 
-entrega := verbo & 
+entrega := verbo-ditrans-np &
 [ ORTH "entrega" ].
 
-llegan := verbo &
+llegan := verbo-trans-p &
 [ ORTH "llegan" ].
 
-retiran := verbo & 
+retiran := verbo-ditrans-np & 
 [ ORTH "retiran" ].
 
-es := verbo & 
+es := verbo-trans-n &
 [ ORTH "es" ].
 
-son := verbo & 
+son := verbo-trans-n &
 [ ORTH "son" ].
 
-comparten := verbo & 
+comparten := verbo-trans-n & 
 [ ORTH "comparten" ].
 
-navega := verbo & 
+navega := verbo-trans-p &
 [ ORTH "navega" ].
 
-fueron := verbo &
+fueron := verbo-trans-n &
 [ ORTH "fueron" ].
 
-ganan := verbo &
+ganan := verbo-trans-n &
 [ ORTH "ganan" ].
 
-interroga := verbo &
+interroga := verbo-trans-p &
 [ ORTH "interroga" ].
 
-predicen := verbo &
+predicen := verbo-trans-n &
 [ ORTH "predicen" ].
 
-duda := verbo &
+duda := verbo-trans-p &
 [ ORTH "duda" ].
 
 
