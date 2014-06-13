@@ -1,16 +1,16 @@
-s := phrase & [ HEAD verb, SPR <>, COMPS <> ].
+s := frase & [ HEAD vb, SPR <>, COMPS <> ].
 
-vp := phrase & [ HEAD verb, SPR < [] >, COMPS <> ].
+vp := frase & [ HEAD vb, SPR < [] >, COMPS <> ].
 
-v := [ HEAD verb ].
+v := [ HEAD vb ].
 
-np := phrase & [ HEAD noun, SPR <>, COMPS <> ].
+np := frase & [ HEAD sust, SPR <>, COMPS <> ].
 
-n := [ HEAD noun, SPR < [] > ].
+n := [ HEAD sust, SPR < [] > ].
 
 det := [ HEAD det ].
 
-pp := phrase & [ HEAD prep, SPR <>, COMPS <> ].
+pp := frase & [ HEAD prep, SPR <>, COMPS <> ].
 
 p := [ HEAD prep ].
 

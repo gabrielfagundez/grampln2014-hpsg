@@ -1,226 +1,226 @@
 ;;; Sustantivos
 
 matematicas := sustantivo &
-[ ORT "matemáticas" ].
+[ ORTH "matemáticas" ].
 
 invitados := sustantivo &
-[ ORT "invitados" ].
+[ ORTH "invitados" ].
 
 conferencia := sustantivo &
-[ ORT "conferencia" ].
+[ ORTH "conferencia" ].
 
 noche := sustantivo &
-[ ORT "noche" ].
+[ ORTH "noche" ].
 
 estudiante := sustantivo &
-[ ORT "estudiante" ].
+[ ORTH "estudiante" ].
 
 estudiantes := sustantivo &
-[ ORT "estudiantes" ].
+[ ORTH "estudiantes" ].
 
 libros := sustantivo & 
-[ ORT "libros" ].
+[ ORTH "libros" ].
 
 libro := sustantivo & 
-[ ORT "libro" ].
+[ ORTH "libro" ].
 
 bote := sustantivo & 
-[ ORT "bote" ].
+[ ORTH "bote" ].
 
 mar := sustantivo & 
-[ ORT "mar" ].
+[ ORTH "mar" ].
 
 vela := sustantivo & 
-[ ORT "vela" ].
+[ ORTH "vela" ].
 
 biblioteca := sustantivo & 
-[ ORT "biblioteca" ].
+[ ORTH "biblioteca" ].
 
 bibliotecaria := sustantivo &
-[ ORT "bibliotecaria" ].
+[ ORTH "bibliotecaria" ].
 
 comprobante := sustantivo &
-[ ORT "comprobante" ].
+[ ORTH "comprobante" ].
 
 gramatica := sustantivo & 
-[ ORT "gramática" ].
+[ ORTH "gramática" ].
 
 profesores := sustantivo &
-[ ORT "profesores" ].
+[ ORTH "profesores" ].
 
 tiempo := sustantivo &
-[ ORT "tiempo" ].
+[ ORTH "tiempo" ].
 
 atletas := sustantivo &
-[ ORT "atletas" ].
+[ ORTH "atletas" ].
 
 carreras := sustantivo &
-[ ORT "carreras" ].
+[ ORTH "carreras" ].
 
 solvencia := sustantivo &
-[ ORT "solvencia" ].
+[ ORTH "solvencia" ].
 
 estilo := sustantivo &
-[ ORT "estilo" ].
+[ ORTH "estilo" ].
 
 jueza := sustantivo &
-[ ORT "jueza" ].
+[ ORTH "jueza" ].
 
 testigo := sustantivo &
-[ ORT "testigo" ].
+[ ORTH "testigo" ].
 
 sala := sustantivo &
-[ ORT "sala" ].
+[ ORTH "sala" ].
 
 audiencias := sustantivo &
-[ ORT "audiencias" ].
+[ ORTH "audiencias" ].
 
 sacerdotisas := sustantivo &
-[ ORT "sacerdotisas" ].
+[ ORTH "sacerdotisas" ].
 
 sacrificios := sustantivo &
-[ ORT "sacrificios" ].
+[ ORTH "sacrificios" ].
 
 dioses := sustantivo &
-[ ORT "dioses" ].
+[ ORTH "dioses" ].
 
 adivinas := sustantivo &
-[ ORT "adivinas" ].
+[ ORTH "adivinas" ].
 
 el-sust := sustantivo &
-[ ORT "él" ].
+[ ORTH "él" ].
 
 mi := sustantivo &
-[ ORT "mi" ].
+[ ORTH "mi" ].
 
 futuro := sustantivo &
-[ ORT "futuro" ].
+[ ORTH "futuro" ].
 
 afirmación := sustantivo &
-[ ORT "afirmación" ].
+[ ORTH "afirmación" ].
 
 
 ;;; Determinantes
 
 el := determinante & 
-[ ORT "el" ].
+[ ORTH "el" ].
 
 ese := determinante & 
-[ ORT "ese" ].
+[ ORTH "ese" ].
 
 la := determinante & 
-[ ORT "la" ].
+[ ORTH "la" ].
 
 las := determinante &
-[ ORT "las" ].
+[ ORTH "las" ].
 
 los := determinante &
-[ ORT "los" ].
+[ ORTH "los" ].
 
 esas := determinante &
-[ ORT "esas" ].
+[ ORTH "esas" ].
 
 
 ;;; Verbos
 
 ofrecen := verbo &
-[ ORT "ofrecen" ].
+[ ORTH "ofrecen" ].
 
 entrega := verbo & 
-[ ORT "entrega" ].
+[ ORTH "entrega" ].
 
 llegan := verbo &
-[ ORT "llegan" ].
+[ ORTH "llegan" ].
 
 retiran := verbo & 
-[ ORT "retiran" ].
+[ ORTH "retiran" ].
 
 es := verbo & 
-[ ORT "es" ].
+[ ORTH "es" ].
 
 son := verbo & 
-[ ORT "son" ].
+[ ORTH "son" ].
 
 comparten := verbo & 
-[ ORT "comparten" ].
+[ ORTH "comparten" ].
 
 navega := verbo & 
-[ ORT "navega" ].
+[ ORTH "navega" ].
 
 fueron := verbo &
-[ ORT "fueron" ].
+[ ORTH "fueron" ].
 
 ganan := verbo &
-[ ORT "ganan" ].
+[ ORTH "ganan" ].
 
 interroga := verbo &
-[ ORT "interroga" ].
+[ ORTH "interroga" ].
 
 predicen := verbo &
-[ ORT "predicen" ].
+[ ORTH "predicen" ].
 
 duda := verbo &
-[ ORT "duda" ].
+[ ORTH "duda" ].
 
 
 ;;; Adjetivos
 
 perdido := adjetivo & 
-[ ORT "perdido" ].
+[ ORTH "perdido" ].
 
 importantes := adjetivo & 
-[ ORT "importantes" ].
+[ ORTH "importantes" ].
 
 entregado := adjetivo & 
-[ ORT "entregado" ].
+[ ORTH "entregado" ].
 
 compartidos := adjetivo & 
-[ ORT "compartidos" ].
+[ ORTH "compartidos" ].
 
 competente := adjetivo &
-[ ORT "competente" ].
+[ ORTH "competente" ].
 
 principal := adjetivo &
-[ ORT "principal" ].
+[ ORTH "principal" ].
 
 ofrecidos := adjetivo &
-[ ORT "ofrecidos" ].
+[ ORTH "ofrecidos" ].
 
 
 ;;; Preposiciones
 
 a := preposicion & 
-[ ORT "a" ].
+[ ORTH "a" ].
 
 por := preposicion & 
-[ ORT "por" ].
+[ ORTH "por" ].
 
 de := preposicion &
-[ ORT "de" ].
+[ ORTH "de" ].
 
 con := preposicion &
-[ ORT "con" ].
+[ ORTH "con" ].
 
 su := preposicion &
-[ ORT "su" ].
+[ ORTH "su" ].
 
 en := preposicion &
-[ ORT "en" ].
+[ ORTH "en" ].
 
 
 ;;; Conjuncion
 
 y := conjuncion &
-[ ORT "y" ].
+[ ORTH "y" ].
 
 
 ;;; Adverbios
 
 recientemente := adverbio & 
-[ ORT "recientemente" ].
+[ ORTH "recientemente" ].
 
 frecuentemente := adverbio & 
-[ ORT "frecuentemente" ].
+[ ORTH "frecuentemente" ].
 
 ya := adverbio &
-[ ORT "ya" ]. 
+[ ORTH "ya" ]. 

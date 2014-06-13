@@ -1,38 +1,63 @@
-;;; Segundo nivel
+;;; Expresiones ;;;
+;;;;;;;;;;;;;;;;;;;
 
 expresion := *top* &
-[ ORT *dlist*,
-  HEAD pos,
+[ HEAD pos,
   SPR *list*,
   COMPS *list* ].
 
-pos := *top* &
-[ MOD *list* ].
+frase := expresion &
+[ ARGS *list* ].
 
-fnominal := expresion &
-[ HEAD sustantivo,
-  SPR < [ HEAD determinante ] > ].
+pos := *top*.
 
-fverbal := expresion &
-[ HEAD verbo,
-  SPR < [ HEAD sustantivo ] > ].
+sust := pos.
 
+vb := pos.
 
-;;; Tercer nivel
+det := pos.
 
-sustantivo := pos.
+adv := pos.
 
-verbo := pos.
+prep := pos.
 
-determinante := pos.
+adj := pos.
 
-adverbio := pos.
+conj := pos.
 
-preposicion := pos.
+;;; Lexemas ;;;
+;;;;;;;;;;;;;;;
 
-adjetivo := pos.
+palabra := expresion &
+[ ORTH string ].
 
-conjuncion := pos.
+sustantivo := palabra &
+[ HEAD sust,
+  SPR < frase & [ HEAD det ] > ].
+
+verbo := palabra &
+[ HEAD vb,
+  SPR < frase & [ HEAD sust ] > ].
+
+determinante := palabra &
+[ HEAD det,
+  SPR < > ].
+
+adverbio := palabra &
+[ HEAD adv,
+  SPR < > ].
+
+preposicion := palabra &
+[ HEAD prep,
+  SPR < > ].
+
+adjetivo := palabra &
+[ HEAD adj,
+  SPR < > ].
+
+conjuncion := palabra &
+[ HEAD conj,
+  SPR < > ].
 
 
 ;;; Tipos basicos
