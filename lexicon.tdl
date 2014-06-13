@@ -1,16 +1,16 @@
 ;;; Sustantivos
 
 matematicas := sustantivo &
-[ ORT “matemáticas ].
+[ ORT "matemáticas" ].
 
 invitados := sustantivo &
-[ ORT “invitados” ].
+[ ORT "invitados" ].
 
 conferencia := sustantivo &
-[ ORT “conferencia” ].
+[ ORT "conferencia" ].
 
 noche := sustantivo &
-[ ORT “noche” ].
+[ ORT "noche" ].
 
 estudiante := sustantivo &
 [ ORT "estudiante" ].
@@ -46,58 +46,58 @@ gramatica := sustantivo &
 [ ORT "gramática" ].
 
 profesores := sustantivo &
-[ ORT “profesores” ].
+[ ORT "profesores" ].
 
 tiempo := sustantivo &
-[ ORT “tiempo” ].
+[ ORT "tiempo" ].
 
 atletas := sustantivo &
-[ ORT “atletas” ].
+[ ORT "atletas" ].
 
 carreras := sustantivo &
-[ ORT “carreras” ].
+[ ORT "carreras" ].
 
-solvencia := sustantivo /
-[ ORT “solvencia” ].
+solvencia := sustantivo &
+[ ORT "solvencia" ].
 
 estilo := sustantivo &
-[ ORT “estilo” ].
+[ ORT "estilo" ].
 
 jueza := sustantivo &
-[ ORT “jueza” ].
+[ ORT "jueza" ].
 
 testigo := sustantivo &
-[ ORT “testigo” ].
+[ ORT "testigo" ].
 
 sala := sustantivo &
-[ ORT “sala” ].
+[ ORT "sala" ].
 
 audiencias := sustantivo &
-[ ORT “audiencias” ].
+[ ORT "audiencias" ].
 
 sacerdotisas := sustantivo &
-[ ORT “sacerdotisas” ].
+[ ORT "sacerdotisas" ].
 
 sacrificios := sustantivo &
-[ ORT “sacrificios” ].
+[ ORT "sacrificios" ].
 
 dioses := sustantivo &
-[ ORT “dioses” ].
+[ ORT "dioses" ].
 
 adivinas := sustantivo &
-[ ORT “adivinas” ].
+[ ORT "adivinas" ].
 
 el-sust := sustantivo &
-[ ORT “él” ].
+[ ORT "él" ].
 
 mi := sustantivo &
-[ ORT “mi” ].
+[ ORT "mi" ].
 
 futuro := sustantivo &
-[ ORT “futuro” ].
+[ ORT "futuro" ].
 
 afirmación := sustantivo &
-[ ORT “afirmación” ].
+[ ORT "afirmación" ].
 
 
 ;;; Determinantes
@@ -112,25 +112,25 @@ la := determinante &
 [ ORT "la" ].
 
 las := determinante &
-[ ORT “las” ].
+[ ORT "las" ].
 
 los := determinante &
-[ ORT “los” ].
+[ ORT "los" ].
 
 esas := determinante &
-[ ORT “esas” ].
+[ ORT "esas" ].
 
 
 ;;; Verbos
 
 ofrecen := verbo &
-[ ORT “ofrecen” ].
+[ ORT "ofrecen" ].
 
 entrega := verbo & 
 [ ORT "entrega" ].
 
 llegan := verbo &
-[ ORT “llegan” ].
+[ ORT "llegan" ].
 
 retiran := verbo & 
 [ ORT "retiran" ].
@@ -148,19 +148,19 @@ navega := verbo &
 [ ORT "navega" ].
 
 fueron := verbo &
-[ ORT “fueron” ].
+[ ORT "fueron" ].
 
 ganan := verbo &
-[ ORT “ganan” ].
+[ ORT "ganan" ].
 
 interroga := verbo &
-[ ORT “interroga” ].
+[ ORT "interroga" ].
 
 predicen := verbo &
-[ ORT “predicen” ].
+[ ORT "predicen" ].
 
 duda := verbo &
-[ ORT “duda” ].
+[ ORT "duda" ].
 
 
 ;;; Adjetivos
@@ -178,13 +178,13 @@ compartidos := adjetivo &
 [ ORT "compartidos" ].
 
 competente := adjetivo &
-[ ORT “competente” ].
+[ ORT "competente" ].
 
 principal := adjetivo &
-[ ORT “principal” ].
+[ ORT "principal" ].
 
 ofrecidos := adjetivo &
-[ ORT “ofrecidos” ].
+[ ORT "ofrecidos" ].
 
 
 ;;; Preposiciones
@@ -196,16 +196,16 @@ por := preposicion &
 [ ORT "por" ].
 
 de := preposicion &
-[ ORT “de” ].
+[ ORT "de" ].
 
 con := preposicion &
-[ ORT “con” ].
+[ ORT "con" ].
 
 su := preposicion &
-[ ORT “su” ].
+[ ORT "su" ].
 
 en := preposicion &
-[ ORT “en” ].
+[ ORT "en" ].
 
 
 ;;; Conjuncion
@@ -223,4 +223,4 @@ frecuentemente := adverbio &
 [ ORT "frecuentemente" ].
 
 ya := adverbio &
-[ ORT “ya” ]. 
+[ ORT "ya" ]. 
