@@ -64,8 +64,8 @@ palabra := expresion &
 [ ORTH string ].
 
 sustantivo := palabra &
-[ HEAD sust & [AGR.NUM #agr],
-  SPR < frase & [ HEAD det & [AGR.NUM #agr] ] >,
+[ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
+  SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
   COMPS < > ].
 
 sustantivo-singular-masculino := sustantivo &
@@ -81,8 +81,8 @@ sustantivo-plural-femenino := sustantivo &
 [ HEAD [ AGR [ NUM pl, GEN fem ]]].
 
 verbo := palabra &
-[ HEAD vb,
-  SPR < frase & [ HEAD sust ] > ].
+[ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
+  SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] > ].
 
 verbo-intrans := verbo &
 [ COMPS < > ].

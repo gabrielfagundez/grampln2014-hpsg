@@ -131,6 +131,10 @@ entrega := verbo-ditrans-np &
 [ ORTH "entrega",
   HEAD [ AGR [ NUM sg ]]].
 
+entregan := verbo-ditrans-np & 
+[ ORTH "entregan",
+  HEAD [ AGR [ NUM pl ]]].
+
 llegan := verbo-trans-p &
 [ ORTH "llegan",
   HEAD [ AGR [ NUM pl ]]].
