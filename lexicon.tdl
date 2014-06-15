@@ -123,44 +123,57 @@ esas := deteminante-plural-femenino &
 
 ;;; Verbos
 
-ofrecen := verbo-ditrans-np &
-[ ORTH "ofrecen" ].
+ofrecen := verbo-ditrans-np & 
+[ ORTH "ofrecen",
+  HEAD [ AGR [ NUM pl ]]].
 
-entrega := verbo-ditrans-np &
-[ ORTH "entrega" ].
+entrega := verbo-ditrans-np & 
+[ ORTH "entrega",
+  HEAD [ AGR [ NUM sg ]]].
 
 llegan := verbo-trans-p &
-[ ORTH "llegan" ].
+[ ORTH "llegan",
+  HEAD [ AGR [ NUM pl ]] ].
 
 retiran := verbo-ditrans-np & 
-[ ORTH "retiran" ].
+[ ORTH "retiran",
+  HEAD [ AGR [ NUM pl ]] ].
 
 es := verbo-trans-n &
-[ ORTH "es" ].
+[ ORTH "es",
+  HEAD [ AGR [ NUM sg ]] ].
 
 son := verbo-trans-n &
-[ ORTH "son" ].
+[ ORTH "son",
+  HEAD [ AGR [ NUM pl ]] ].
 
 comparten := verbo-trans-n & 
-[ ORTH "comparten" ].
+[ ORTH "comparten",
+  HEAD [ AGR [ NUM pl ]] ].
 
 navega := verbo-trans-p &
-[ ORTH "navega" ].
+[ ORTH "navega",
+  HEAD [ AGR [ NUM sg ]] ].
 
 fueron := verbo-trans-n &
-[ ORTH "fueron" ].
+[ ORTH "fueron",
+  HEAD [ AGR [ NUM pl ]] ].
 
 ganan := verbo-trans-n &
-[ ORTH "ganan" ].
+[ ORTH "ganan",
+  HEAD [ AGR [ NUM pl ]] ].
 
 interroga := verbo-trans-p &
-[ ORTH "interroga" ].
+[ ORTH "interroga",
+  HEAD [ AGR [ NUM sg ]] ].
 
 predicen := verbo-trans-n &
-[ ORTH "predicen" ].
+[ ORTH "predicen",
+  HEAD [ AGR [ NUM pl ]] ].
 
 duda := verbo-trans-p &
-[ ORTH "duda" ].
+[ ORTH "duda",
+  HEAD [ AGR [ NUM sg ]] ].
 
 
 ;;; Adjetivos

@@ -69,16 +69,16 @@ sustantivo := palabra &
   COMPS < > ].
 
 sustantivo-singular-masculino := sustantivo &
-[ HEAD [ AGR [NUM sg, GEN mas]]].
+[ HEAD [ AGR [ NUM sg, GEN mas ]]].
 
 sustantivo-singular-femenino := sustantivo &
-[ HEAD [ AGR [NUM sg, GEN fem]]].
+[ HEAD [ AGR [ NUM sg, GEN fem ]]].
 
 sustantivo-plural-masculino := sustantivo &
-[ HEAD [ AGR [NUM pl, GEN mas]]].
+[ HEAD [ AGR [ NUM pl, GEN mas ]]].
 
 sustantivo-plural-femenino := sustantivo &
-[ HEAD [ AGR [NUM pl, GEN fem]]].
+[ HEAD [ AGR [ NUM pl, GEN fem ]]].
 
 verbo := palabra &
 [ HEAD vb,
@@ -115,16 +115,16 @@ determinante := palabra &
   COMPS < > ].
 
 deteminante-singular-masculino := determinante &
-[ HEAD [ AGR [NUM sg, GEN mas]]].
+[ HEAD [ AGR [ NUM sg, GEN mas ]]].
 
 deteminante-singular-femenino := determinante &
-[ HEAD [ AGR [NUM sg, GEN fem]]].
+[ HEAD [ AGR [ NUM sg, GEN fem ]]].
 
 deteminante-plural-masculino := determinante &
-[ HEAD [ AGR [NUM pl, GEN mas]]].
+[ HEAD [ AGR [ NUM pl, GEN mas ]]].
 
 deteminante-plural-femenino := determinante &
-[ HEAD [ AGR [NUM pl, GEN fem]]].
+[ HEAD [ AGR [ NUM pl, GEN fem ]]].
 
 adverbio := palabra &
 [ HEAD adv,
