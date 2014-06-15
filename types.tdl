@@ -64,8 +64,8 @@ palabra := expresion &
 [ ORTH string ].
 
 sustantivo := palabra &
-[ HEAD sust,
-  SPR < frase & [ HEAD det ] >,
+[ HEAD sust & [AGR.NUM #agr],
+  SPR < frase & [ HEAD det & [AGR.NUM #agr] ] >,
   COMPS < > ].
 
 sustantivo-singular-masculino := sustantivo &
