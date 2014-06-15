@@ -102,22 +102,22 @@ afirmación := sustantivo &
 
 ;;; Determinantes
 
-el := determinante & 
+el := deteminante-singular-masculino & 
 [ ORTH "el" ].
 
-ese := determinante & 
+ese := deteminante-singular-masculino & 
 [ ORTH "ese" ].
 
-la := determinante & 
+la := deteminante-singular-femenino & 
 [ ORTH "la" ].
 
-las := determinante &
+las := deteminante-plural-femenino &
 [ ORTH "las" ].
 
-los := determinante &
+los := deteminante-plural-masculino &
 [ ORTH "los" ].
 
-esas := determinante &
+esas := deteminante-plural-femenino &
 [ ORTH "esas" ].
 
 
