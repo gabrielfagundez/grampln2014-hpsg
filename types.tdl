@@ -108,11 +108,11 @@ verbo-trans-p := verbo &
 
 verbo-ditrans-np := verbo &
 [ COMPS < frase,
-          frase > ].
+          frase-prep > ].
 
 verbo-ditrans-pp := verbo &
-[ COMPS < frase,
-          frase > ].
+[ COMPS < frase-nominal,
+          frase-nominal > ].
 
 determinante := palabra &
 [ HEAD det,
