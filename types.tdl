@@ -31,8 +31,14 @@ adj := agr-pos &
 ;;;;;;;;;;;;;;;;;;;;
 
 num-cat := *top*.
-per-cat := *top*.
+pl := num-cat.
+sg := num-cat.
+
 gen-cat := *top*.
+mas := gen-cat.
+fem := gen-cat.
+
+per-cat := *top*.
 
 agr-pos := pos &
 [ AGR agr-cat ].
@@ -95,6 +101,18 @@ determinante := palabra &
 [ HEAD det,
   SPR < >,
   COMPS < > ].
+
+deteminante-singular-masculino := determinante &
+[ HEAD [ AGR [NUM sg, GEN mas]]].
+
+deteminante-singular-femenino := determinante &
+[ HEAD [ AGR [NUM sg, GEN fem]]].
+
+deteminante-plural-masculino := determinante &
+[ HEAD [ AGR [NUM pl, GEN mas]]].
+
+deteminante-plural-femenino := determinante &
+[ HEAD [ AGR [NUM pl, GEN fem]]].
 
 adverbio := palabra &
 [ HEAD adv,
