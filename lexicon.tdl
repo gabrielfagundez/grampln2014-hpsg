@@ -133,47 +133,47 @@ entrega := verbo-ditrans-np &
 
 llegan := verbo-trans-p &
 [ ORTH "llegan",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 retiran := verbo-ditrans-np & 
 [ ORTH "retiran",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 es := verbo-trans-n &
 [ ORTH "es",
-  HEAD [ AGR [ NUM sg ]] ].
+  HEAD [ AGR [ NUM sg ]]].
 
 son := verbo-trans-n &
 [ ORTH "son",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 comparten := verbo-trans-n & 
 [ ORTH "comparten",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 navega := verbo-trans-p &
 [ ORTH "navega",
-  HEAD [ AGR [ NUM sg ]] ].
+  HEAD [ AGR [ NUM sg ]]].
 
 fueron := verbo-trans-n &
 [ ORTH "fueron",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 ganan := verbo-trans-n &
 [ ORTH "ganan",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 interroga := verbo-trans-p &
 [ ORTH "interroga",
-  HEAD [ AGR [ NUM sg ]] ].
+  HEAD [ AGR [ NUM sg ]]].
 
 predicen := verbo-trans-n &
 [ ORTH "predicen",
-  HEAD [ AGR [ NUM pl ]] ].
+  HEAD [ AGR [ NUM pl ]]].
 
 duda := verbo-trans-p &
 [ ORTH "duda",
-  HEAD [ AGR [ NUM sg ]] ].
+  HEAD [ AGR [ NUM sg ]]].
 
 
 ;;; Adjetivos
