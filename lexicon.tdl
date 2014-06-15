@@ -1,102 +1,102 @@
 ;;; Sustantivos
 
-matematicas := sustantivo &
+matematicas := sustantivo-plural-femenino &
 [ ORTH "matemáticas" ].
 
-invitados := sustantivo &
+invitados := sustantivo-plural-masculino &
 [ ORTH "invitados" ].
 
-conferencia := sustantivo &
+conferencia := sustantivo-plural-femenino &
 [ ORTH "conferencia" ].
 
-noche := sustantivo &
+noche := sustantivo-singular-masculino &
 [ ORTH "noche" ].
 
-estudiante := sustantivo &
+estudiante := sustantivo-singular-masculino &
 [ ORTH "estudiante" ].
 
-estudiantes := sustantivo &
+estudiantes := sustantivo-plural-masculino &
 [ ORTH "estudiantes" ].
 
-libros := sustantivo & 
+libros := sustantivo-plural-masculino & 
 [ ORTH "libros" ].
 
-libro := sustantivo & 
+libro := sustantivo-singular-masculino & 
 [ ORTH "libro" ].
 
-bote := sustantivo & 
+bote := sustantivo-singular-masculino & 
 [ ORTH "bote" ].
 
-mar := sustantivo & 
+mar := sustantivo-singular-masculino & 
 [ ORTH "mar" ].
 
-vela := sustantivo & 
+vela := sustantivo-singular-femenino & 
 [ ORTH "vela" ].
 
-biblioteca := sustantivo & 
+biblioteca := sustantivo-singular-femenino & 
 [ ORTH "biblioteca" ].
 
-bibliotecaria := sustantivo &
+bibliotecaria := sustantivo-singular-femenino &
 [ ORTH "bibliotecaria" ].
 
-comprobante := sustantivo &
+comprobante := sustantivo-singular-masculino &
 [ ORTH "comprobante" ].
 
-gramatica := sustantivo & 
+gramatica := sustantivo-singular-femenino & 
 [ ORTH "gramática" ].
 
-profesores := sustantivo &
+profesores := sustantivo-plural-masculino &
 [ ORTH "profesores" ].
 
-tiempo := sustantivo &
+tiempo := sustantivo-singular-masculino &
 [ ORTH "tiempo" ].
 
-atletas := sustantivo &
+atletas := sustantivo-plural-femenino &
 [ ORTH "atletas" ].
 
-carreras := sustantivo &
+carreras := sustantivo-plural-femenino &
 [ ORTH "carreras" ].
 
-solvencia := sustantivo &
+solvencia := sustantivo-singular-femenino &
 [ ORTH "solvencia" ].
 
-estilo := sustantivo &
+estilo := sustantivo-singular-masculino &
 [ ORTH "estilo" ].
 
-jueza := sustantivo &
+jueza := sustantivo-singular-femenino &
 [ ORTH "jueza" ].
 
-testigo := sustantivo &
+testigo := sustantivo-singular-masculino &
 [ ORTH "testigo" ].
 
-sala := sustantivo &
+sala := sustantivo-singular-femenino &
 [ ORTH "sala" ].
 
-audiencias := sustantivo &
+audiencias := sustantivo-plural-femenino &
 [ ORTH "audiencias" ].
 
-sacerdotisas := sustantivo &
+sacerdotisas := sustantivo-plural-femenino &
 [ ORTH "sacerdotisas" ].
 
-sacrificios := sustantivo &
+sacrificios := sustantivo-plural-masculino &
 [ ORTH "sacrificios" ].
 
-dioses := sustantivo &
+dioses := sustantivo-plural-masculino &
 [ ORTH "dioses" ].
 
-adivinas := sustantivo &
+adivinas := sustantivo-plural-femenino &
 [ ORTH "adivinas" ].
 
 el-sust := sustantivo &
 [ ORTH "él" ].
 
-mi := sustantivo &
+mi := sustantivo-singular-masculino &
 [ ORTH "mi" ].
 
-futuro := sustantivo &
+futuro := sustantivo-singular-masculino &
 [ ORTH "futuro" ].
 
-afirmación := sustantivo &
+afirmación := sustantivo-singular-masculino &
 [ ORTH "afirmación" ].
 
 

@@ -68,6 +68,18 @@ sustantivo := palabra &
   SPR < frase & [ HEAD det ] >,
   COMPS < > ].
 
+sustantivo-singular-masculino := sustantivo &
+[ HEAD [ AGR [NUM sg, GEN mas]]].
+
+sustantivo-singular-femenino := sustantivo &
+[ HEAD [ AGR [NUM sg, GEN fem]]].
+
+sustantivo-plural-masculino := sustantivo &
+[ HEAD [ AGR [NUM pl, GEN mas]]].
+
+sustantivo-plural-femenino := sustantivo &
+[ HEAD [ AGR [NUM pl, GEN fem]]].
+
 verbo := palabra &
 [ HEAD vb,
   SPR < frase & [ HEAD sust ] > ].
