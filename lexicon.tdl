@@ -178,25 +178,25 @@ duda := verbo-trans-p &
 
 ;;; Adjetivos
 
-perdido := adjetivo & 
+perdido := adjetivo-singular-masculino & 
 [ ORTH "perdido" ].
 
-importantes := adjetivo & 
+importantes := adjetivo-plural-masculino & 
 [ ORTH "importantes" ].
 
-entregado := adjetivo & 
+entregado := adjetivo-singular-masculino & 
 [ ORTH "entregado" ].
 
-compartidos := adjetivo & 
+compartidos := adjetivo-plural-masculino & 
 [ ORTH "compartidos" ].
 
-competente := adjetivo &
+competente := adjetivo-singular-masculino &
 [ ORTH "competente" ].
 
-principal := adjetivo &
+principal := adjetivo-singular-masculino &
 [ ORTH "principal" ].
 
-ofrecidos := adjetivo &
+ofrecidos := adjetivo-plural-masculino &
 [ ORTH "ofrecidos" ].
 
 

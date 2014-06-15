@@ -139,6 +139,18 @@ adjetivo := palabra &
 [ HEAD adj,
   SPR < > ].
 
+adjetivo-singular-masculino := adjetivo &
+[ HEAD [ AGR [ NUM sg, GEN mas ]]].
+
+adjetivo-singular-femenino := adjetivo &
+[ HEAD [ AGR [ NUM sg, GEN fem ]]].
+
+adjetivo-plural-masculino := adjetivo &
+[ HEAD [ AGR [ NUM pl, GEN mas ]]].
+
+adjetivo-plural-femenino := adjetivo &
+[ HEAD [ AGR [ NUM pl, GEN fem ]]].
+
 conjuncion := palabra &
 [ HEAD conj,
   SPR < > ].
