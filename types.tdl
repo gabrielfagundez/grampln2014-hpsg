@@ -68,6 +68,11 @@ sustantivo := palabra &
   SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
   COMPS < > ].
 
+conjuncion := palabra &
+[ HEAD conj,
+  SPR < >,
+  COMPS < frase & [ HEAD sust ], frase & [ HEAD sust ] > ].
+
 sustantivo-singular-masculino := sustantivo &
 [ HEAD [ AGR [ NUM sg, GEN mas ]]].
 
@@ -102,12 +107,12 @@ verbo-trans-p := verbo &
 [ COMPS < frase-prep > ].
 
 verbo-ditrans-np := verbo &
-[ COMPS < frase-nominal,
-          frase-prep > ].
+[ COMPS < frase,
+          frase > ].
 
 verbo-ditrans-pp := verbo &
-[ COMPS < frase-nominal,
-          frase-nominal > ].
+[ COMPS < frase,
+          frase > ].
 
 determinante := palabra &
 [ HEAD det,
@@ -150,10 +155,6 @@ adjetivo-plural-masculino := adjetivo &
 
 adjetivo-plural-femenino := adjetivo &
 [ HEAD [ AGR [ NUM pl, GEN fem ]]].
-
-conjuncion := palabra &
-[ HEAD conj,
-  SPR < > ].
 
 ;;; Tipos basicos ;;;
 ;;;;;;;;;;;;;;;;;;;;;

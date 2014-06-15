@@ -31,6 +31,18 @@ head-complement-rule-2 := frase &
          #nonhd2 >  ].
 
 
+head-complement-rule-3 := frase &
+[ HEAD #head,
+  SPR #spr, 
+  COMPS < >,   
+  ARGS < #nonhd1,
+         palabra & 
+         [ HEAD #head,
+           SPR #spr, 
+           COMPS < #nonhd1, #nonhd2 > ],   
+         #nonhd2 >  ].
+
+
 head-specifier-rule := frase &
 [ HEAD #head,
   SPR < >,

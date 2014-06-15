@@ -8,11 +8,11 @@ np := frase & [ HEAD sust, SPR <>, COMPS <> ].
 
 n := [ HEAD sust, SPR < [] > ].
 
+cnj := [ HEAD conj ].
+
 det := [ HEAD det ].
 
 pp := frase & [ HEAD prep, SPR <>, COMPS <> ].
 
 p := [ HEAD prep ].
-
-
 
