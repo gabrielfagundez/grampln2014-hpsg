@@ -11,19 +11,45 @@ frase := expresion &
 
 pos := *top*.
 
-sust := pos.
-
-vb := pos.
-
-det := pos.
-
 adv := pos.
 
 prep := pos.
 
-adj := pos.
-
 conj := pos.
+
+vb := agr-pos &
+[ AGR agr-cat-p ].
+
+det := agr-pos-pg.
+
+sust := agr-pos-pg.
+
+adj := agr-pos &
+[ AGR agr-cat-g ].
+
+;;; Concordancia ;;;
+;;;;;;;;;;;;;;;;;;;;
+
+num-cat := *top*.
+per-cat := *top*.
+gen-cat := *top*.
+
+agr-pos := pos &
+[ AGR agr-cat ].
+
+agr-pos-pg := agr-pos &
+[ AGR agr-cat-pg ].
+
+agr-cat := *top* &
+[ NUM num-cat ].
+
+agr-cat-p := agr-cat &
+[ PER per-cat ].
+
+agr-cat-g := agr-cat &
+[ GEN gen-cat ].
+
+agr-cat-pg := agr-cat-p & agr-cat-g.
 
 ;;; Lexemas ;;;
 ;;;;;;;;;;;;;;;
@@ -87,8 +113,8 @@ conjuncion := palabra &
 [ HEAD conj,
   SPR < > ].
 
-
-;;; Tipos basicos
+;;; Tipos basicos ;;;
+;;;;;;;;;;;;;;;;;;;;;
 
 string := *top*.
 
