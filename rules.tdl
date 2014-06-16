@@ -11,11 +11,10 @@ head-complement-rule-0 := frase &
 head-complement-rule-1 := frase &
 [ HEAD #head,
   SPR #spr, 
-  COMPS < >,   
-  ARGS < palabra & 
-         [ HEAD #head,
-           SPR #spr, 
-           COMPS < #nonhddtr > ],  
+  COMPS < >,
+  ARGS < expresion & [ HEAD #head,
+           SPR #spr,
+           COMPS < #nonhddtr > ],
          #nonhddtr >  ].
 
 
@@ -46,13 +45,24 @@ head-complement-rule-3 := frase &
 head-specifier-rule := frase &
 [ HEAD #head,
   SPR < >,
-  COMPS #comps,
+  COMPS < >,
+  MODS < >,
   ARGS < #nonhd,
          frase & 
        [ HEAD #head,
          SPR < #nonhd >,
-         COMPS #comps ] > ]. 
+         COMPS < >,
+	 MODS < > ] > ]. 
 
 
-
-
+head-modifier-rule := frase &
+[ HEAD #head,
+  SPR #spr,
+  COMPS #comps,
+  MODS < >,
+  ARGS < expresion &
+	 [ HEAD #head,
+	   SPR #spr,
+	   COMPS #comps,
+	   MODS < #mod > ],
+	 #mod > ].

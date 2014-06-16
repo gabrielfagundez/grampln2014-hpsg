@@ -4,7 +4,8 @@
 expresion := *top* &
 [ HEAD pos,
   SPR *list*,
-  COMPS *list* ].
+  COMPS *list*,
+  MODS *list* ].
 
 frase := expresion &
 [ ARGS *list* ].
@@ -66,7 +67,8 @@ palabra := expresion &
 sustantivo := palabra &
 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
   SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
-  COMPS < > ].
+  COMPS < >,
+  MODS < frase-prep > ].
 
 conjuncion := palabra &
 [ HEAD conj,
@@ -87,7 +89,8 @@ sustantivo-plural-femenino := sustantivo &
 
 verbo := palabra &
 [ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
-  SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] > ].
+  SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
+  MODS < adverbio > ].
 
 verbo-intrans := verbo &
 [ COMPS < > ].
@@ -98,7 +101,9 @@ frase-nominal := frase &
 
 frase-prep := frase &
 [ HEAD prep,
-  SPR < > ].
+  SPR < >,
+  COMPS < >,
+  MODS < > ].
 
 verbo-trans-n := verbo &
 [ COMPS < frase-nominal > ].
@@ -117,7 +122,8 @@ verbo-ditrans-pp := verbo &
 determinante := palabra &
 [ HEAD det,
   SPR < >,
-  COMPS < > ].
+  COMPS < >,
+  MODS < > ].
 
 deteminante-singular-masculino := determinante &
 [ HEAD [ AGR [ NUM sg, GEN mas ]]].
@@ -133,16 +139,20 @@ deteminante-plural-femenino := determinante &
 
 adverbio := palabra &
 [ HEAD adv,
-  SPR < > ].
+  SPR < >,
+  COMPS < >,
+  MODS < > ].
 
 preposicion := palabra &
 [ HEAD prep,
   SPR < >,
-  COMPS < frase-nominal > ].
+  COMPS < [ HEAD sust, MODS < >, COMPS < > ] >,
+  MODS < > ].
 
 adjetivo := palabra &
 [ HEAD adj,
-  SPR < > ].
+  SPR < >,
+  MODS < > ].
 
 adjetivo-singular-masculino := adjetivo &
 [ HEAD [ AGR [ NUM sg, GEN mas ]]].

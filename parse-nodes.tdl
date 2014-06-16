@@ -10,6 +10,8 @@ n := [ HEAD sust, SPR < [] > ].
 
 cnj := [ HEAD conj ].
 
+adv := [ HEAD adv ].
+
 det := [ HEAD det ].
 
 pp := frase & [ HEAD prep, SPR <>, COMPS <> ].
