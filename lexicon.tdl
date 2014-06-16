@@ -15,7 +15,10 @@ noche := sustantivo-singular-masculino &
 estudiante := sustantivo-singular-masculino &
 [ ORTH "estudiante" ].
 
-estudiantes := sustantivo-plural-masculino &
+estudiantes-masc := sustantivo-plural-masculino &
+[ ORTH "estudiantes" ].
+
+estudiantes-fem := sustantivo-plural-femenino &
 [ ORTH "estudiantes" ].
 
 libros := sustantivo-plural-masculino & 
