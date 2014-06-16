@@ -78,6 +78,7 @@ sust-mod-adj := sustantivo &
 conjuncion := palabra &
 [ HEAD conj,
   SPR < >,
+  MODS < >,
   COMPS < frase & [ HEAD sust ], frase & [ HEAD sust ] > ].
 
 sustantivo-singular-masculino := sustantivo &
@@ -117,7 +118,7 @@ verbo-trans-p := verbo &
 [ COMPS < frase-prep > ].
 
 verbo-ditrans-np := verbo &
-[ COMPS < frase,
+[ COMPS < frase-nominal,
           frase-prep > ].
 
 verbo-ditrans-pp := verbo &

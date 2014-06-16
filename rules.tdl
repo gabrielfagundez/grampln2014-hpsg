@@ -31,12 +31,12 @@ head-complement-rule-2 := frase &
 
 
 head-complement-rule-3 := frase &
-[ HEAD #head,
+[ HEAD sust,
   SPR #spr, 
   COMPS < >,   
   ARGS < #nonhd1,
          palabra & 
-         [ HEAD #head,
+         [ HEAD conj,
            SPR #spr, 
            COMPS < #nonhd1, #nonhd2 > ],   
          #nonhd2 >  ].
