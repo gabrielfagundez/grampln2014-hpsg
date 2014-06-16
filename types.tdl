@@ -67,8 +67,13 @@ palabra := expresion &
 sustantivo := palabra &
 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
   SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
-  COMPS < >,
-  MODS < frase-prep > ].
+  COMPS < > ].
+
+sust-mod-prep := sustantivo &
+[ MODS < frase-prep > ].
+
+sust-mod-adj := sustantivo &
+[ MODS < [ HEAD adj ] > ].
 
 conjuncion := palabra &
 [ HEAD conj,
