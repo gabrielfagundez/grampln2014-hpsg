@@ -3,13 +3,10 @@
 matematicas := sustantivo-plural-femenino &
 [ ORTH "matemáticas" ].
 
-invitados := sustantivo-plural-masculino &
-[ ORTH "invitados" ].
-
-conferencia := sustantivo-plural-femenino &
+conferencia := sustantivo-singular-femenino &
 [ ORTH "conferencia" ].
 
-noche := sustantivo-singular-masculino &
+noche := sustantivo-singular-femenino &
 [ ORTH "noche" ].
 
 estudiante-masc := sustantivo-singular-masculino &
@@ -213,6 +210,8 @@ competente := adjetivo-singular-masculino &
 principal := adjetivo-singular-masculino &
 [ ORTH "principal" ].
 
+invitados := adjetivo-plural-masculino &
+[ ORTH "invitados" ].
 
 ;;; Preposiciones
 
