@@ -12,7 +12,10 @@ conferencia := sustantivo-plural-femenino &
 noche := sustantivo-singular-masculino &
 [ ORTH "noche" ].
 
-estudiante := sustantivo-singular-masculino &
+estudiante-masc := sustantivo-singular-masculino &
+[ ORTH "estudiante" ].
+
+estudiante-fem := sustantivo-singular-femenino &
 [ ORTH "estudiante" ].
 
 estudiantes-masc := sustantivo-plural-masculino &
