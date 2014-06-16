@@ -132,8 +132,12 @@ verbo-trans-n := verbo &
 verbo-trans-p := verbo &
 [ COMPS < frase-prep > ].
 
+verbo-ditrans-pn := verbo &
+[ COMPS < frase-prep,
+          frase-nominal > ].
+
 verbo-ditrans-np := verbo &
-[ COMPS < frase-nominal,
+[ COMPS < [ HEAD sust ],
           frase-prep > ].
 
 verbo-ditrans-pp := verbo &
