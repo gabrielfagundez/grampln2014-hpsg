@@ -19,3 +19,5 @@ pp := frase & [ HEAD prep, SPR <>, COMPS <> ].
 p := [ HEAD prep ].
 
 adj := [ HEAD adj ].
+
+part := [ HEAD part ].

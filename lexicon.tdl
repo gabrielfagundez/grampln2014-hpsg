@@ -149,11 +149,11 @@ retiran := verbo-ditrans-np &
 [ ORTH "retiran",
   HEAD [ AGR [ NUM pl ]]].
 
-es := verbo-trans-n &
+es := verbo-trans-p &
 [ ORTH "es",
   HEAD [ AGR [ NUM sg ]]].
 
-son := verbo-trans-n &
+son := verbo-trans-p &
 [ ORTH "son",
   HEAD [ AGR [ NUM pl ]]].
 
@@ -185,6 +185,16 @@ duda := verbo-trans-p &
 [ ORTH "duda",
   HEAD [ AGR [ NUM sg ]]].
 
+;;; Participios
+
+entregado := participio-singular &
+[ ORTH "entregado" ].
+
+compartidos := participio-plural & 
+[ ORTH "compartidos" ].
+
+ofrecidos := participio-plural &
+[ ORTH "ofrecidos" ].
 
 ;;; Adjetivos
 
@@ -194,20 +204,11 @@ perdido := adjetivo-singular-masculino &
 importantes := adjetivo-plural-masculino & 
 [ ORTH "importantes" ].
 
-entregado := adjetivo-singular-masculino & 
-[ ORTH "entregado" ].
-
-compartidos := adjetivo-plural-masculino & 
-[ ORTH "compartidos" ].
-
 competente := adjetivo-singular-masculino &
 [ ORTH "competente" ].
 
 principal := adjetivo-singular-masculino &
 [ ORTH "principal" ].
-
-ofrecidos := adjetivo-plural-masculino &
-[ ORTH "ofrecidos" ].
 
 
 ;;; Preposiciones

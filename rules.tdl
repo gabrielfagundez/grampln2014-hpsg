@@ -66,3 +66,16 @@ head-modifier-rule := frase &
 	   COMPS #comps,
 	   MODS < #mod > ],
 	 #mod > ].
+
+
+passive-voice := frase &
+[ HEAD #head,
+  SPR #spr,
+  COMPS #comps,
+  MODS #mods,
+  ARGS < expresion & [ HEAD #head,
+           SPR #spr,
+           COMPS #comps,
+	   MODS #mods,
+	   PART < #participio > ],
+         #participio >  ].

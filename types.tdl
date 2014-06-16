@@ -16,6 +16,8 @@ adv := pos.
 
 prep := pos.
 
+part := agr-pos.
+
 conj := pos.
 
 vb := agr-pos &
@@ -75,6 +77,18 @@ sust-mod-prep := sustantivo &
 sust-mod-adj := sustantivo &
 [ MODS < [ HEAD adj ] > ].
 
+participio := palabra &
+[ HEAD part,
+  SPR < >,
+  COMPS < >,
+  MODS < > ].
+
+participio-singular := participio &
+[ HEAD [ AGR [ NUM sg ] ] ].
+
+participio-plural := participio &
+[ HEAD [ AGR [ NUM pl ] ] ].
+
 conjuncion := palabra &
 [ HEAD conj,
   SPR < >,
@@ -96,7 +110,8 @@ sustantivo-plural-femenino := sustantivo &
 verbo := palabra &
 [ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
   SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
-  MODS < adverbio > ].
+  MODS < adverbio >,
+  PART *list* ].
 
 verbo-intrans := verbo &
 [ COMPS < > ].
