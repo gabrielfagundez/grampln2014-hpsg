@@ -105,6 +105,9 @@ afirmación := sustantivo-singular-masculino &
 
 ;;; Determinantes
 
+su := deteminante-singular-masculino &
+[ ORTH "su" ].
+
 el := deteminante-singular-masculino & 
 [ ORTH "el" ].
 
@@ -170,7 +173,7 @@ ganan := verbo-trans-n &
 [ ORTH "ganan",
   HEAD [ AGR [ NUM pl ]]].
 
-interroga := verbo-trans-p &
+interroga := verbo-ditrans-pp &
 [ ORTH "interroga",
   HEAD [ AGR [ NUM sg ]]].
 
@@ -220,9 +223,6 @@ de := preposicion &
 
 con := preposicion &
 [ ORTH "con" ].
-
-su := preposicion &
-[ ORTH "su" ].
 
 en := preposicion &
 [ ORTH "en" ].
