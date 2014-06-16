@@ -60,7 +60,7 @@ head-modifier-rule := frase &
   SPR #spr,
   COMPS #comps,
   MODS < >,
-  ARGS < expresion &
+  ARGS < palabra &
 	 [ HEAD #head,
 	   SPR #spr,
 	   COMPS #comps,
