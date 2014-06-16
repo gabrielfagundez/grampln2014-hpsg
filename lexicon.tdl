@@ -6,6 +6,9 @@ matematicas := sustantivo-plural-femenino &
 conferencia := sustantivo-singular-femenino &
 [ ORTH "conferencia" ].
 
+invitados-sust := sustantivo-plural-masculino &
+[ ORTH "invitados" ].
+
 noche := sustantivo-singular-femenino &
 [ ORTH "noche" ].
 
@@ -165,7 +168,7 @@ navega := verbo-trans-p &
 [ ORTH "navega",
   HEAD [ AGR [ NUM sg ]]].
 
-fueron := verbo-trans-n &
+fueron := verbo-trans-p &
 [ ORTH "fueron",
   HEAD [ AGR [ NUM pl ]]].
 
@@ -195,6 +198,9 @@ compartidos := participio-plural &
 
 ofrecidos := participio-plural &
 [ ORTH "ofrecidos" ].
+
+invitados-part := participio-plural &
+[ ORTH "invitados" ].
 
 ;;; Adjetivos
 

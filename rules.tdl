@@ -67,6 +67,18 @@ head-modifier-rule := frase &
 	   MODS < #mod > ],
 	 #mod > ].
 
+head-modifier-rule-2 := frase &
+[ HEAD verbo,
+  SPR #spr,
+  COMPS #comps,
+  MODS < >,
+  ARGS < #mod,
+         palabra &
+	 [ HEAD verbo,
+	   SPR #spr,
+	   COMPS #comps,
+	   MODS < #mod > ] > ].
+
 
 passive-voice := frase &
 [ HEAD #head,
