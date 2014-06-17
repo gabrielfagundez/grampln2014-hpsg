@@ -181,7 +181,8 @@ preposicion := palabra &
 adjetivo := palabra &
 [ HEAD adj,
   SPR < >,
-  MODS < > ].
+  COMPS < >,
+  MODS < adverbio > ].
 
 adjetivo-singular-masculino := adjetivo &
 [ HEAD [ AGR [ NUM sg, GEN mas ]]].

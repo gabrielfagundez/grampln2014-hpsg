@@ -68,13 +68,13 @@ head-modifier-rule := frase &
 	 #mod > ].
 
 head-modifier-rule-2 := frase &
-[ HEAD verbo,
+[ HEAD adj,
   SPR #spr,
   COMPS #comps,
   MODS < >,
   ARGS < #mod,
          palabra &
-	 [ HEAD verbo,
+	 [ HEAD adj,
 	   SPR #spr,
 	   COMPS #comps,
 	   MODS < #mod > ] > ].
