@@ -165,11 +165,11 @@ retiran := verbo-ditrans-np &
 [ ORTH "retiran",
   HEAD [ AGR [ NUM pl ]]].
 
-es := verbo-trans-p &
+es := verbo-ser &
 [ ORTH "es",
   HEAD [ AGR [ NUM sg ]]].
 
-son := verbo-trans-p &
+son := verbo-ser &
 [ ORTH "son",
   HEAD [ AGR [ NUM pl ]]].
 
@@ -181,7 +181,7 @@ navega := verbo-trans-p &
 [ ORTH "navega",
   HEAD [ AGR [ NUM sg ]]].
 
-fueron := verbo-trans-p &
+fueron := verbo-ser &
 [ ORTH "fueron",
   HEAD [ AGR [ NUM pl ]]].
 

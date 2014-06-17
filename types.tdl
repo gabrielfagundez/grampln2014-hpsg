@@ -7,9 +7,6 @@ expresion := *top* &
   COMPS *list*,
   MODS *list* ].
 
-frase := expresion &
-[ ARGS *list* ].
-
 pos := *top*.
 
 adv := pos.
@@ -64,11 +61,12 @@ agr-cat-pg := agr-cat-p & agr-cat-g.
 ;;;;;;;;;;;;;;;
 
 palabra := expresion &
-[ ORTH string ].
+[ ORTH string,
+  ARGS *list* ].
 
 sustantivo := palabra &
 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
-  SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
+  SPR < palabra & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
   COMPS < > ].
 
 sust-mod-prep := sustantivo &
@@ -93,7 +91,7 @@ conjuncion := palabra &
 [ HEAD conj,
   SPR < >,
   MODS < >,
-  COMPS < frase & [ HEAD sust ], frase & [ HEAD sust ] > ].
+  COMPS < palabra & [ HEAD sust ], palabra & [ HEAD sust ] > ].
 
 sustantivo-singular-masculino := sustantivo &
 [ HEAD [ AGR [ NUM sg, GEN mas ]]].
@@ -109,18 +107,20 @@ sustantivo-plural-femenino := sustantivo &
 
 verbo := palabra &
 [ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
-  SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
-  MODS < adverbio >,
-  PART *list* ].
+  SPR < palabra & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
+  MODS < adverbio > ].
+
+verbo-ser := verbo-trans-p &
+[ PART < participio > ].
 
 verbo-intrans := verbo &
 [ COMPS < > ].
 
-frase-nominal := frase &
+frase-nominal := palabra &
 [ HEAD sust,
   SPR < > ].
 
-frase-prep := frase &
+frase-prep := palabra &
 [ HEAD prep,
   SPR < >,
   COMPS < >,
