@@ -12,8 +12,17 @@ invitados-sust := sustantivo-plural-masculino &
 noche := sustantivo-singular-femenino &
 [ ORTH "noche" ].
 
+acto := sustantivo-singular-masculino &
+[ ORTH "acto" ].
+
+opera := sustantivo-singular-femenino &
+[ ORTH "ópera" ].
+
 estudiante-masc := sustantivo-singular-masculino &
 [ ORTH "estudiante" ].
+
+personaje := sustantivo-singular-masculino &
+[ ORTH "personaje" ].
 
 estudiante-fem := sustantivo-singular-femenino &
 [ ORTH "estudiante" ].
@@ -132,6 +141,10 @@ esas := deteminante-plural-femenino &
 
 ;;; Verbos
 
+muere := verbo-intrans & 
+[ ORTH "muere",
+  HEAD [ AGR [ NUM sg ]]].
+
 ofrecen := verbo-ditrans-np & 
 [ ORTH "ofrecen",
   HEAD [ AGR [ NUM pl ]]].
@@ -193,6 +206,15 @@ duda := verbo-trans-p &
 entregado := participio-singular &
 [ ORTH "entregado" ].
 
+ofrecido := participio-singular &
+[ ORTH "ofrecido" ].
+
+entregados-masc := participio-plural &
+[ ORTH "entregados" ].
+
+entregadas-fem := participio-plural &
+[ ORTH "entregadas" ].
+
 compartidos := participio-plural & 
 [ ORTH "compartidos" ].
 
@@ -218,6 +240,12 @@ principal := adjetivo-singular-masculino &
 
 invitados := adjetivo-plural-masculino &
 [ ORTH "invitados" ].
+
+femenina := adjetivo-singular-femenino &
+[ ORTH "femenina" ].
+
+terceras := adjetivo-plural-femenino &
+[ ORTH "terceras" ].
 
 ;;; Preposiciones
 

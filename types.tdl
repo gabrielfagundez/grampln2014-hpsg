@@ -126,6 +126,9 @@ frase-prep := frase &
   COMPS < >,
   MODS < > ].
 
+verbo-intrans := verbo &
+[ COMPS < frase-nominal > ].
+
 verbo-trans-n := verbo &
 [ COMPS < frase-nominal > ].
 
