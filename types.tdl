@@ -69,12 +69,6 @@ sustantivo := palabra &
   SPR < palabra & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
   COMPS < > ].
 
-sust-mod-prep := sustantivo &
-[ MODS < frase-prep > ].
-
-sust-mod-adj := sustantivo &
-[ MODS < [ HEAD adj ] > ].
-
 participio := palabra &
 [ HEAD part,
   SPR < >,
