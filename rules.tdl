@@ -1,4 +1,4 @@
-head-complement-rule-1 := frase &
+regla-del-complemento-1 := frase &
 [ HEAD #head,
   SPR #spr, 
   COMPS < >,
@@ -8,7 +8,7 @@ head-complement-rule-1 := frase &
          #nonhddtr >  ].
 
 
-head-complement-rule-2 := frase &
+regla-del-complemento-2 := frase &
 [ HEAD #head,
   SPR #spr, 
   COMPS < >,   
@@ -20,7 +20,7 @@ head-complement-rule-2 := frase &
          #nonhd2 >  ].
 
 
-head-complement-rule-3 := frase &
+regla-del-complemento-3 := frase &
 [ HEAD sust,
   SPR #spr, 
   COMPS < >,   
@@ -32,7 +32,7 @@ head-complement-rule-3 := frase &
          #nonhd2 >  ].
 
 
-head-specifier-rule := frase &
+regla-del-especificador := frase &
 [ HEAD #head,
   SPR < >,
   COMPS < >,
@@ -45,7 +45,7 @@ head-specifier-rule := frase &
 	 MODS < > ] > ]. 
 
 
-head-modifier-rule := frase &
+regla-del-modificador-para-sust := frase &
 [ HEAD sust,
   SPR < #spr >,
   COMPS < >,
@@ -57,7 +57,7 @@ head-modifier-rule := frase &
 	   COMPS < > ],
 	 frase-prep > ].
 
-head-modifier-adj := frase &
+regla-del-modificador-para-sust-adj := frase &
 [ HEAD sust,
   SPR < #spr >,
   COMPS < >,
@@ -69,7 +69,7 @@ head-modifier-adj := frase &
 	   COMPS < > ],
 	 [ HEAD adj & [ AGR.NUM #num, AGR.GEN #gen ] ] > ].
 
-head-modifier-adv := frase &
+regla-del-modificador-para-vb-adv := frase &
 [ HEAD vb,
   SPR < #spr >,
   COMPS #comp,
@@ -80,7 +80,7 @@ head-modifier-adv := frase &
 	   COMPS #comp ],
 	 [ HEAD adv ] > ].
 
-head-modifier-adj-adv := frase &
+regla-del-modificador-para-adj-adv := frase &
 [ HEAD adj,
   SPR < >,
   COMPS < >,
@@ -89,7 +89,7 @@ head-modifier-adj-adv := frase &
 	 [ HEAD adj ],
 	 [ HEAD adv ] > ].
 
-head-modifier-rule-2 := frase &
+regla-del-modificador-para-adj := frase &
 [ HEAD adj,
   SPR #spr,
   COMPS #comps,
