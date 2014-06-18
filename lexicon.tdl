@@ -105,9 +105,6 @@ adivinas := sustantivo-plural-femenino &
 el-sust := sustantivo &
 [ ORTH "él" ].
 
-mi := sustantivo-singular-masculino &
-[ ORTH "mi" ].
-
 futuro := sustantivo-singular-masculino &
 [ ORTH "futuro" ].
 
@@ -137,6 +134,9 @@ los := deteminante-plural-masculino &
 
 esas := deteminante-plural-femenino &
 [ ORTH "esas" ].
+
+mi := deteminante-singular-masculino &
+[ ORTH "mi" ].
 
 
 ;;; Verbos
@@ -232,7 +232,7 @@ perdido := adjetivo-singular-masculino &
 importantes := adjetivo-plural-masculino & 
 [ ORTH "importantes" ].
 
-competente := adjetivo-singular-masculino &
+competente := adjetivo-singular-femenino &
 [ ORTH "competente" ].
 
 principal := adjetivo-singular-masculino &

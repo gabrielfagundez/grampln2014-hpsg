@@ -67,7 +67,8 @@ palabra := expresion &
 sustantivo := palabra &
 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
   SPR < palabra & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
-  COMPS < > ].
+  COMPS < >,
+  MODS *list* ].
 
 participio := palabra &
 [ HEAD part,
@@ -169,7 +170,7 @@ adverbio := palabra &
 preposicion := palabra &
 [ HEAD prep,
   SPR < >,
-  COMPS < [ HEAD sust, MODS < >, COMPS < > ] >,
+  COMPS < [ HEAD sust, COMPS < > ] >,
   MODS < > ].
 
 adjetivo := palabra &

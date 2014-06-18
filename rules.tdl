@@ -46,16 +46,48 @@ head-specifier-rule := palabra &
 
 
 head-modifier-rule := palabra &
-[ HEAD #head,
-  SPR #spr,
-  COMPS #comps,
+[ HEAD sust,
+  SPR < #spr >,
+  COMPS < >,
   MODS < >,
   ARGS < palabra &
-	 [ HEAD #head,
-	   SPR #spr,
-	   COMPS #comps,
-	   MODS < #mod > ],
-	 #mod > ].
+	 [ HEAD sust,
+	   SPR < #spr >,
+	   MODS *list*,
+	   COMPS < > ],
+	 frase-prep > ].
+
+head-modifier-adj := palabra &
+[ HEAD sust,
+  SPR < #spr >,
+  COMPS < >,
+  MODS < >,
+  ARGS < palabra &
+	 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
+	   SPR < #spr >,
+	   MODS *list*,
+	   COMPS < > ],
+	 [ HEAD adj & [ AGR.NUM #num, AGR.GEN #gen ] ] > ].
+
+head-modifier-adv := palabra &
+[ HEAD vb,
+  SPR < #spr >,
+  COMPS #comp,
+  MODS < >,
+  ARGS < palabra &
+	 [ HEAD vb,
+	   SPR < #spr >,
+	   COMPS #comp ],
+	 [ HEAD adv ] > ].
+
+head-modifier-adj-adv := palabra &
+[ HEAD adj,
+  SPR < >,
+  COMPS < >,
+  MODS < >,
+  ARGS < palabra &
+	 [ HEAD adj ],
+	 [ HEAD adv ] > ].
 
 head-modifier-rule-2 := palabra &
 [ HEAD adj,
