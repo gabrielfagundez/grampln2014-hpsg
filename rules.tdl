@@ -1,4 +1,4 @@
-head-complement-rule-1 := palabra &
+head-complement-rule-1 := frase &
 [ HEAD #head,
   SPR #spr, 
   COMPS < >,
@@ -8,11 +8,11 @@ head-complement-rule-1 := palabra &
          #nonhddtr >  ].
 
 
-head-complement-rule-2 := palabra &
+head-complement-rule-2 := frase &
 [ HEAD #head,
   SPR #spr, 
   COMPS < >,   
-  ARGS < palabra & 
+  ARGS < frase & 
          [ HEAD #head,
            SPR #spr, 
            COMPS < #nonhd1, #nonhd2 > ],  
@@ -20,89 +20,89 @@ head-complement-rule-2 := palabra &
          #nonhd2 >  ].
 
 
-head-complement-rule-3 := palabra &
+head-complement-rule-3 := frase &
 [ HEAD sust,
   SPR #spr, 
   COMPS < >,   
   ARGS < #nonhd1,
-         palabra & 
+         frase & 
          [ HEAD conj,
            SPR #spr, 
            COMPS < #nonhd1, #nonhd2 > ],   
          #nonhd2 >  ].
 
 
-head-specifier-rule := palabra &
+head-specifier-rule := frase &
 [ HEAD #head,
   SPR < >,
   COMPS < >,
   MODS < >,
   ARGS < #nonhd,
-         palabra & 
+         frase & 
        [ HEAD #head,
          SPR < #nonhd >,
          COMPS < >,
 	 MODS < > ] > ]. 
 
 
-head-modifier-rule := palabra &
+head-modifier-rule := frase &
 [ HEAD sust,
   SPR < #spr >,
   COMPS < >,
   MODS < >,
-  ARGS < palabra &
+  ARGS < frase &
 	 [ HEAD sust,
 	   SPR < #spr >,
 	   MODS *list*,
 	   COMPS < > ],
 	 frase-prep > ].
 
-head-modifier-adj := palabra &
+head-modifier-adj := frase &
 [ HEAD sust,
   SPR < #spr >,
   COMPS < >,
   MODS < >,
-  ARGS < palabra &
+  ARGS < frase &
 	 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
 	   SPR < #spr >,
 	   MODS *list*,
 	   COMPS < > ],
 	 [ HEAD adj & [ AGR.NUM #num, AGR.GEN #gen ] ] > ].
 
-head-modifier-adv := palabra &
+head-modifier-adv := frase &
 [ HEAD vb,
   SPR < #spr >,
   COMPS #comp,
   MODS < >,
-  ARGS < palabra &
+  ARGS < frase &
 	 [ HEAD vb,
 	   SPR < #spr >,
 	   COMPS #comp ],
 	 [ HEAD adv ] > ].
 
-head-modifier-adj-adv := palabra &
+head-modifier-adj-adv := frase &
 [ HEAD adj,
   SPR < >,
   COMPS < >,
   MODS < >,
-  ARGS < palabra &
+  ARGS < frase &
 	 [ HEAD adj ],
 	 [ HEAD adv ] > ].
 
-head-modifier-rule-2 := palabra &
+head-modifier-rule-2 := frase &
 [ HEAD adj,
   SPR #spr,
   COMPS #comps,
   MODS < >,
   ARGS < #mod,
-         palabra &
+         frase &
 	 [ HEAD adj,
 	   SPR #spr,
 	   COMPS #comps,
 	   MODS < #mod > ] > ].
 
 
-passive-voice := palabra &
+passive-voice := frase &
 [ HEAD #head,
   SPR #spr,
   COMPS #comps,

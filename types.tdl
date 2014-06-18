@@ -60,17 +60,17 @@ agr-cat-pg := agr-cat-p & agr-cat-g.
 ;;; Lexemas ;;;
 ;;;;;;;;;;;;;;;
 
-palabra := expresion &
+frase := expresion &
 [ ORTH string,
   ARGS *list* ].
 
-sustantivo := palabra &
+sustantivo := frase &
 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
-  SPR < palabra & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
+  SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
   COMPS < >,
   MODS *list* ].
 
-participio := palabra &
+participio := frase &
 [ HEAD part,
   SPR < >,
   COMPS < >,
@@ -82,11 +82,11 @@ participio-singular := participio &
 participio-plural := participio &
 [ HEAD [ AGR [ NUM pl ] ] ].
 
-conjuncion := palabra &
+conjuncion := frase &
 [ HEAD conj,
   SPR < >,
   MODS < >,
-  COMPS < palabra & [ HEAD sust ], palabra & [ HEAD sust ] > ].
+  COMPS < frase & [ HEAD sust ], frase & [ HEAD sust ] > ].
 
 sustantivo-singular-masculino := sustantivo &
 [ HEAD [ AGR [ NUM sg, GEN mas ]]].
@@ -100,23 +100,23 @@ sustantivo-plural-masculino := sustantivo &
 sustantivo-plural-femenino := sustantivo &
 [ HEAD [ AGR [ NUM pl, GEN fem ]]].
 
-verbo := palabra &
+verbo := frase &
 [ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
-  SPR < palabra & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
+  SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
   MODS < adverbio > ].
 
 verbo-ser := verbo-trans-p &
 [ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
-  PART < palabra & [ HEAD part & [ AGR.NUM #num, AGR.PER #per ] ] > ].
+  PART < frase & [ HEAD part & [ AGR.NUM #num, AGR.PER #per ] ] > ].
 
 verbo-intrans := verbo &
 [ COMPS < > ].
 
-frase-nominal := palabra &
+frase-nominal := frase &
 [ HEAD sust,
   SPR < > ].
 
-frase-prep := palabra &
+frase-prep := frase &
 [ HEAD prep,
   SPR < >,
   COMPS < >,
@@ -144,7 +144,7 @@ verbo-ditrans-nn := verbo &
 [ COMPS < frase-nominal,
           frase-nominal > ].
 
-determinante := palabra &
+determinante := frase &
 [ HEAD det,
   SPR < >,
   COMPS < >,
@@ -162,19 +162,19 @@ deteminante-plural-masculino := determinante &
 deteminante-plural-femenino := determinante &
 [ HEAD [ AGR [ NUM pl, GEN fem ]]].
 
-adverbio := palabra &
+adverbio := frase &
 [ HEAD adv,
   SPR < >,
   COMPS < >,
   MODS < > ].
 
-preposicion := palabra &
+preposicion := frase &
 [ HEAD prep,
   SPR < >,
   COMPS < [ HEAD sust, COMPS < > ] >,
   MODS < > ].
 
-adjetivo := palabra &
+adjetivo := frase &
 [ HEAD adj,
   SPR < >,
   COMPS < >,
