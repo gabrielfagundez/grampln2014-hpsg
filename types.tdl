@@ -106,7 +106,8 @@ verbo := palabra &
   MODS < adverbio > ].
 
 verbo-ser := verbo-trans-p &
-[ PART < participio > ].
+[ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
+  PART < palabra & [ HEAD part & [ AGR.NUM #num, AGR.PER #per ] ] > ].
 
 verbo-intrans := verbo &
 [ COMPS < > ].
