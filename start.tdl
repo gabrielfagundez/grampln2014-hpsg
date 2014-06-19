@@ -1,6 +1,6 @@
-;;; Start structure
+;;; Estructura inicial
 
-start := frase &
-[ HEAD vb,
+start := phrase &
+[ HEAD verb,
   SPR <>,
   COMPS <> ].

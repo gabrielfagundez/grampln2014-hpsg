@@ -1,283 +1,283 @@
-;;; Sustantivos
+;;; Adjetivos
 
-matematicas := sustantivo-plural-femenino &
+matematicas := nounp-pl-fm &
 [ ORTH "matemáticas" ].
 
-conferencia := sustantivo-singular-femenino &
+conferencia := nounp-sg-fm &
 [ ORTH "conferencia" ].
 
-invitados-sust := sustantivo-plural-masculino &
+invitados-sust := nounp-pl-ml &
 [ ORTH "invitados" ].
 
-noche := sustantivo-singular-femenino &
+noche := nounp-sg-fm &
 [ ORTH "noche" ].
 
-acto := sustantivo-singular-masculino &
+acto := nounp-sg-ml &
 [ ORTH "acto" ].
 
-opera := sustantivo-singular-femenino &
+opera := nounp-sg-fm &
 [ ORTH "ópera" ].
 
-estudiante-masc := sustantivo-singular-masculino &
+estudiante-masc := nounp-sg-ml &
 [ ORTH "estudiante" ].
 
-personaje := sustantivo-singular-masculino &
+personaje := nounp-sg-ml &
 [ ORTH "personaje" ].
 
-estudiante-fem := sustantivo-singular-femenino &
+estudiante-fem := nounp-sg-fm &
 [ ORTH "estudiante" ].
 
-estudiantes-masc := sustantivo-plural-masculino &
+estudiantes-masc := nounp-pl-ml &
 [ ORTH "estudiantes" ].
 
-estudiantes-fem := sustantivo-plural-femenino &
+estudiantes-fem := nounp-pl-fm &
 [ ORTH "estudiantes" ].
 
-libros := sustantivo-plural-masculino & 
+libros := nounp-pl-ml & 
 [ ORTH "libros" ].
 
-libro := sustantivo-singular-masculino & 
+libro := nounp-sg-ml & 
 [ ORTH "libro" ].
 
-bote := sustantivo-singular-masculino & 
+bote := nounp-sg-ml & 
 [ ORTH "bote" ].
 
-mar := sustantivo-singular-masculino & 
+mar := nounp-sg-ml & 
 [ ORTH "mar" ].
 
-vela := sustantivo-singular-femenino & 
+vela := nounp-sg-fm & 
 [ ORTH "vela" ].
 
-biblioteca := sustantivo-singular-femenino & 
+biblioteca := nounp-sg-fm & 
 [ ORTH "biblioteca" ].
 
-bibliotecaria := sustantivo-singular-femenino &
+bibliotecaria := nounp-sg-fm &
 [ ORTH "bibliotecaria" ].
 
-comprobante := sustantivo-singular-masculino &
+comprobante := nounp-sg-ml &
 [ ORTH "comprobante" ].
 
-gramatica := sustantivo-singular-femenino & 
+gramatica := nounp-sg-fm & 
 [ ORTH "gramática" ].
 
-profesores := sustantivo-plural-masculino &
+profesores := nounp-pl-ml &
 [ ORTH "profesores" ].
 
-tiempo := sustantivo-singular-masculino &
+tiempo := nounp-sg-ml &
 [ ORTH "tiempo" ].
 
-atletas := sustantivo-plural-femenino &
+atletas := nounp-pl-fm &
 [ ORTH "atletas" ].
 
-carreras := sustantivo-plural-femenino &
+carreras := nounp-pl-fm &
 [ ORTH "carreras" ].
 
-solvencia := sustantivo-singular-femenino &
+solvencia := nounp-sg-fm &
 [ ORTH "solvencia" ].
 
-estilo := sustantivo-singular-masculino &
+estilo := nounp-sg-ml &
 [ ORTH "estilo" ].
 
-jueza := sustantivo-singular-femenino &
+jueza := nounp-sg-fm &
 [ ORTH "jueza" ].
 
-testigo := sustantivo-singular-masculino &
+testigo := nounp-sg-ml &
 [ ORTH "testigo" ].
 
-sala := sustantivo-singular-femenino &
+sala := nounp-sg-fm &
 [ ORTH "sala" ].
 
-audiencias := sustantivo-plural-femenino &
+audiencias := nounp-pl-fm &
 [ ORTH "audiencias" ].
 
-sacerdotisas := sustantivo-plural-femenino &
+sacerdotisas := nounp-pl-fm &
 [ ORTH "sacerdotisas" ].
 
-sacrificios := sustantivo-plural-masculino &
+sacrificios := nounp-pl-ml &
 [ ORTH "sacrificios" ].
 
-dioses := sustantivo-plural-masculino &
+dioses := nounp-pl-ml &
 [ ORTH "dioses" ].
 
-adivinas := sustantivo-plural-femenino &
+adivinas := nounp-pl-fm &
 [ ORTH "adivinas" ].
 
-el-sust := sustantivo &
+el-sust := nounp &
 [ ORTH "él" ].
 
-futuro := sustantivo-singular-masculino &
+futuro := nounp-sg-ml &
 [ ORTH "futuro" ].
 
-afirmación := sustantivo-singular-masculino &
+afirmación := nounp-sg-ml &
 [ ORTH "afirmación" ].
 
 
 ;;; Determinantes
 
-su := deteminante-singular-masculino &
+su := detp-sg-ml &
 [ ORTH "su" ].
 
-el := deteminante-singular-masculino & 
+el := detp-sg-ml & 
 [ ORTH "el" ].
 
-ese := deteminante-singular-masculino & 
+ese := detp-sg-ml & 
 [ ORTH "ese" ].
 
-la := deteminante-singular-femenino & 
+la := detp-sg-fm & 
 [ ORTH "la" ].
 
-las := deteminante-plural-femenino &
+las := detp-pl-fm &
 [ ORTH "las" ].
 
-los := deteminante-plural-masculino &
+los := detp-pl-ml &
 [ ORTH "los" ].
 
-esas := deteminante-plural-femenino &
+esas := detp-pl-fm &
 [ ORTH "esas" ].
 
-mi := deteminante-singular-masculino &
+mi := detp-sg-ml &
 [ ORTH "mi" ].
 
 
 ;;; Verbos
 
-muere := verbo-intrans & 
+muere := verbp-intr & 
 [ ORTH "muere",
   HEAD [ AGR [ NUM sg ]]].
 
-ofrecen := verbo-ditrans-np & 
+ofrecen := verbp-ditr-np & 
 [ ORTH "ofrecen",
   HEAD [ AGR [ NUM pl ]]].
 
-entrega := verbo-ditrans-np & 
+entrega := verbp-ditr-np & 
 [ ORTH "entrega",
   HEAD [ AGR [ NUM sg ]]].
 
-entregan := verbo-ditrans-np & 
+entregan := verbp-ditr-np & 
 [ ORTH "entregan",
   HEAD [ AGR [ NUM pl ]]].
 
-llegan := verbo-trans-p &
+llegan := verbp-tr-p &
 [ ORTH "llegan",
   HEAD [ AGR [ NUM pl ]]].
 
-retiran := verbo-ditrans-np & 
+retiran := verbp-ditr-np & 
 [ ORTH "retiran",
   HEAD [ AGR [ NUM pl ]]].
 
-es := verbo-ser &
+es := verb-tobe &
 [ ORTH "es",
   HEAD [ AGR [ NUM sg ]]].
 
-son := verbo-ser &
+son := verb-tobe &
 [ ORTH "son",
   HEAD [ AGR [ NUM pl ]]].
 
-comparten := verbo-trans-n & 
+comparten := verbp-tr-n & 
 [ ORTH "comparten",
   HEAD [ AGR [ NUM pl ]]].
 
-navega := verbo-trans-p &
+navega := verbp-tr-p &
 [ ORTH "navega",
   HEAD [ AGR [ NUM sg ]]].
 
-fueron := verbo-ser &
+fueron := verb-tobe &
 [ ORTH "fueron",
   HEAD [ AGR [ NUM pl ]]].
 
-ganan := verbo-trans-n &
+ganan := verbp-tr-n &
 [ ORTH "ganan",
   HEAD [ AGR [ NUM pl ]]].
 
-interroga := verbo-ditrans-pp &
+interroga := verbp-ditr-pp &
 [ ORTH "interroga",
   HEAD [ AGR [ NUM sg ]]].
 
-predicen := verbo-trans-n &
+predicen := verbp-tr-n &
 [ ORTH "predicen",
   HEAD [ AGR [ NUM pl ]]].
 
-duda := verbo-trans-p &
+duda := verbp-tr-p &
 [ ORTH "duda",
   HEAD [ AGR [ NUM sg ]]].
 
 ;;; Participios
 
-entregado := participio-singular &
+entregado := partp-sg &
 [ ORTH "entregado" ].
 
-ofrecido := participio-singular &
+ofrecido := partp-sg &
 [ ORTH "ofrecido" ].
 
-entregados-masc := participio-plural &
+entregados-masc := partp-pl &
 [ ORTH "entregados" ].
 
-entregadas-fem := participio-plural &
+entregadas-fem := partp-pl &
 [ ORTH "entregadas" ].
 
-compartidos := participio-plural & 
+compartidos := partp-pl & 
 [ ORTH "compartidos" ].
 
-ofrecidos := participio-plural &
+ofrecidos := partp-pl &
 [ ORTH "ofrecidos" ].
 
-invitados-part := participio-plural &
+invitados-part := partp-pl &
 [ ORTH "invitados" ].
 
 ;;; Adjetivos
 
-perdido := adjetivo-singular-masculino & 
+perdido := adjp-sg-ml & 
 [ ORTH "perdido" ].
 
-importantes := adjetivo-plural-masculino & 
+importantes := adjp-pl-ml & 
 [ ORTH "importantes" ].
 
-competente := adjetivo-singular-femenino &
+competente := adjp-sg-fm &
 [ ORTH "competente" ].
 
-principal := adjetivo-singular-masculino &
+principal := adjp-sg-ml &
 [ ORTH "principal" ].
 
-invitados := adjetivo-plural-masculino &
+invitados := adjp-pl-ml &
 [ ORTH "invitados" ].
 
-femenina := adjetivo-singular-femenino &
+femenina := adjp-sg-fm &
 [ ORTH "femenina" ].
 
-terceras := adjetivo-plural-femenino &
+terceras := adjp-pl-fm &
 [ ORTH "terceras" ].
 
 ;;; Preposiciones
 
-a := preposicion & 
+a := prepp & 
 [ ORTH "a" ].
 
-por := preposicion & 
+por := prepp & 
 [ ORTH "por" ].
 
-de := preposicion &
+de := prepp &
 [ ORTH "de" ].
 
-con := preposicion &
+con := prepp &
 [ ORTH "con" ].
 
-en := preposicion &
+en := prepp &
 [ ORTH "en" ].
 
 
 ;;; Conjuncion
 
-y := conjuncion &
+y := conjp &
 [ ORTH "y" ].
 
 
 ;;; Adverbios
 
-recientemente := adverbio & 
+recientemente := advp & 
 [ ORTH "recientemente" ].
 
-frecuentemente := adverbio & 
+frecuentemente := advp & 
 [ ORTH "frecuentemente" ].
 
-ya := adverbio &
+ya := advp &
 [ ORTH "ya" ]. 

@@ -1,18 +1,18 @@
-regla-del-complemento-1 := frase &
+complement-1 := phrase &
 [ HEAD #head,
   SPR #spr, 
   COMPS < >,
-  ARGS < expresion & [ HEAD #head,
+  ARGS < expression & [ HEAD #head,
            SPR #spr,
            COMPS < #nonhddtr > ],
          #nonhddtr >  ].
 
 
-regla-del-complemento-2 := frase &
+complement-2 := phrase &
 [ HEAD #head,
   SPR #spr, 
   COMPS < >,   
-  ARGS < frase & 
+  ARGS < phrase & 
          [ HEAD #head,
            SPR #spr, 
            COMPS < #nonhd1, #nonhd2 > ],  
@@ -20,94 +20,98 @@ regla-del-complemento-2 := frase &
          #nonhd2 >  ].
 
 
-regla-del-complemento-3 := frase &
-[ HEAD sust,
+conjuction := phrase &
+[ HEAD noun,
   SPR #spr, 
   COMPS < >,   
   ARGS < #nonhd1,
-         frase & 
-         [ HEAD conj,
+         phrase & 
+         [ HEAD conjunction,
            SPR #spr, 
            COMPS < #nonhd1, #nonhd2 > ],   
          #nonhd2 >  ].
 
 
-regla-del-especificador := frase &
+specifier := phrase &
 [ HEAD #head,
   SPR < >,
   COMPS < >,
   MODS < >,
   ARGS < #nonhd,
-         frase & 
+         phrase & 
        [ HEAD #head,
          SPR < #nonhd >,
          COMPS < >,
 	 MODS < > ] > ]. 
 
 
-regla-del-modificador-para-sust := frase &
-[ HEAD sust,
+noun-modifier-prep := phrase &
+[ HEAD noun,
   SPR < #spr >,
   COMPS < >,
   MODS < >,
-  ARGS < frase &
-	 [ HEAD sust,
+  ARGS < phrase &
+	 [ HEAD noun,
 	   SPR < #spr >,
 	   MODS *list*,
 	   COMPS < > ],
-	 frase-prep > ].
+	 head-preposition > ].
 
-regla-del-modificador-para-sust-adj := frase &
-[ HEAD sust,
+
+noun-modifier-adj := phrase &
+[ HEAD noun,
   SPR < #spr >,
   COMPS < >,
   MODS < >,
-  ARGS < frase &
-	 [ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
+  ARGS < phrase &
+	 [ HEAD noun & [ AGR.NUM #num, AGR.GEN #gen ],
 	   SPR < #spr >,
 	   MODS *list*,
 	   COMPS < > ],
-	 [ HEAD adj & [ AGR.NUM #num, AGR.GEN #gen ] ] > ].
+	 [ HEAD adjective & [ AGR.NUM #num, AGR.GEN #gen ] ] > ].
 
-regla-del-modificador-para-vb-adv := frase &
-[ HEAD vb,
+
+verb-modifier-adv := phrase &
+[ HEAD verb,
   SPR < #spr >,
   COMPS #comp,
   MODS < >,
-  ARGS < frase &
-	 [ HEAD vb,
+  ARGS < phrase &
+	 [ HEAD verb,
 	   SPR < #spr >,
 	   COMPS #comp ],
-	 [ HEAD adv ] > ].
+	 [ HEAD adverb ] > ].
 
-regla-del-modificador-para-adj-adv := frase &
-[ HEAD adj,
+
+adjective-modifier-adv := phrase &
+[ HEAD adjective,
   SPR < >,
   COMPS < >,
   MODS < >,
-  ARGS < frase &
-	 [ HEAD adj ],
-	 [ HEAD adv ] > ].
+  ARGS < phrase &
+	 [ HEAD adjective ],
+	 [ HEAD adverb ] > ].
 
-regla-del-modificador-para-adj := frase &
-[ HEAD adj,
+
+noun-modificador-adj-prev := phrase &
+[ HEAD adjective,
   SPR #spr,
   COMPS #comps,
   MODS < >,
   ARGS < #mod,
-         frase &
-	 [ HEAD adj,
+         phrase &
+	 [ HEAD adjective,
 	   SPR #spr,
 	   COMPS #comps,
 	   MODS < #mod > ] > ].
 
 
-passive-voice := frase &
+passive-voice := phrase &
 [ HEAD #head,
   SPR #spr,
   COMPS #comps,
   MODS #mods,
-  ARGS < expresion & [ HEAD #head,
+  ARGS < expression & [ HEAD #head,
            SPR #spr,
            COMPS #comps,
 	   MODS #mods,

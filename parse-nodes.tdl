@@ -1,23 +1,23 @@
-s := palabra & [ HEAD vb, SPR <>, COMPS <> ].
+s := phrase & [ HEAD verb, SPR <>, COMPS <> ].
 
-vp := palabra & [ HEAD vb, SPR < [] >, COMPS <> ].
+vp := phrase & [ HEAD verb, SPR < [] >, COMPS <> ].
 
-v := [ HEAD vb ].
+v := [ HEAD verb ].
 
-np := palabra & [ HEAD sust, SPR <>, COMPS <> ].
+np := phrase & [ HEAD noun, SPR <>, COMPS <> ].
 
-n := [ HEAD sust, SPR < [] > ].
+n := [ HEAD noun, SPR < [] > ].
 
-cnj := [ HEAD conj ].
+cnj := [ HEAD conjunction ].
 
-adv := [ HEAD adv ].
+adv := [ HEAD adverb ].
 
-det := [ HEAD det ].
+det := [ HEAD determiner ].
 
-pp := palabra & [ HEAD prep, SPR <>, COMPS <> ].
+pp := phrase & [ HEAD preposition, SPR <>, COMPS <> ].
 
-p := [ HEAD prep ].
+p := [ HEAD preposition ].
 
-adj := [ HEAD adj ].
+adj := [ HEAD adjective ].
 
-part := [ HEAD part ].
+part := [ HEAD participle ].

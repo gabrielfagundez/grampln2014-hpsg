@@ -1,7 +1,7 @@
-;;; Expresiones ;;;
-;;;;;;;;;;;;;;;;;;;
+;;; Categorias gramaticales ;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-expresion := *top* &
+expression := *top* &
 [ HEAD pos,
   SPR *list*,
   COMPS *list*,
@@ -9,22 +9,22 @@ expresion := *top* &
 
 pos := *top*.
 
-adv := pos.
+adverb := pos.
 
-prep := pos.
+preposition := pos.
 
-part := agr-pos.
+participle := agr-pos.
 
-conj := pos.
+conjunction := pos.
 
-vb := agr-pos &
+verb := agr-pos &
 [ AGR agr-cat-p ].
 
-det := agr-pos-pg.
+determiner := agr-pos-pg.
 
-sust := agr-pos-pg.
+noun := agr-pos-pg.
 
-adj := agr-pos &
+adjective := agr-pos &
 [ AGR agr-cat-g ].
 
 ;;; Concordancia ;;;
@@ -35,8 +35,8 @@ pl := num-cat.
 sg := num-cat.
 
 gen-cat := *top*.
-mas := gen-cat.
-fem := gen-cat.
+ml := gen-cat.
+fm := gen-cat.
 
 per-cat := *top*.
 
@@ -60,137 +60,137 @@ agr-cat-pg := agr-cat-p & agr-cat-g.
 ;;; Lexemas ;;;
 ;;;;;;;;;;;;;;;
 
-frase := expresion &
+phrase := expression &
 [ ORTH string,
   ARGS *list* ].
 
-sustantivo := frase &
-[ HEAD sust & [ AGR.NUM #num, AGR.GEN #gen ],
-  SPR < frase & [ HEAD det & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
+nounp := phrase &
+[ HEAD noun & [ AGR.NUM #num, AGR.GEN #gen ],
+  SPR < phrase & [ HEAD determiner & [ AGR.NUM #num, AGR.GEN #gen ] ] >,
   COMPS < >,
   MODS *list* ].
 
-participio := frase &
-[ HEAD part,
+partp := phrase &
+[ HEAD participle,
   SPR < >,
   COMPS < >,
   MODS < > ].
 
-participio-singular := participio &
+partp-sg := partp &
 [ HEAD [ AGR [ NUM sg ] ] ].
 
-participio-plural := participio &
+partp-pl := partp &
 [ HEAD [ AGR [ NUM pl ] ] ].
 
-conjuncion := frase &
-[ HEAD conj,
+conjp := phrase &
+[ HEAD conjunction,
   SPR < >,
   MODS < >,
-  COMPS < frase & [ HEAD sust ], frase & [ HEAD sust ] > ].
+  COMPS < phrase & [ HEAD noun ], phrase & [ HEAD noun ] > ].
 
-sustantivo-singular-masculino := sustantivo &
-[ HEAD [ AGR [ NUM sg, GEN mas ]]].
+nounp-sg-ml := nounp &
+[ HEAD [ AGR [ NUM sg, GEN ml ]]].
 
-sustantivo-singular-femenino := sustantivo &
-[ HEAD [ AGR [ NUM sg, GEN fem ]]].
+nounp-sg-fm := nounp &
+[ HEAD [ AGR [ NUM sg, GEN fm ]]].
 
-sustantivo-plural-masculino := sustantivo &
-[ HEAD [ AGR [ NUM pl, GEN mas ]]].
+nounp-pl-ml := nounp &
+[ HEAD [ AGR [ NUM pl, GEN ml ]]].
 
-sustantivo-plural-femenino := sustantivo &
-[ HEAD [ AGR [ NUM pl, GEN fem ]]].
+nounp-pl-fm := nounp &
+[ HEAD [ AGR [ NUM pl, GEN fm ]]].
 
-verbo := frase &
-[ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
-  SPR < frase & [ HEAD sust & [ AGR.NUM #num, AGR.PER #per ] ] >, 
-  MODS < adverbio > ].
+verbp := phrase &
+[ HEAD verb & [ AGR.NUM #num, AGR.PER #per ],
+  SPR < phrase & [ HEAD noun & [ AGR.NUM #num, AGR.PER #per ] ] >, 
+  MODS < advp > ].
 
-verbo-ser := verbo-trans-p &
-[ HEAD vb & [ AGR.NUM #num, AGR.PER #per ],
-  PART < frase & [ HEAD part & [ AGR.NUM #num, AGR.PER #per ] ] > ].
+verb-tobe := verbp-tr-p &
+[ HEAD verb & [ AGR.NUM #num, AGR.PER #per ],
+  PART < phrase & [ HEAD participle & [ AGR.NUM #num, AGR.PER #per ] ] > ].
 
-verbo-intrans := verbo &
+verbp-intr := verbp &
 [ COMPS < > ].
 
-frase-nominal := frase &
-[ HEAD sust,
+head-noun := phrase &
+[ HEAD noun,
   SPR < > ].
 
-frase-prep := frase &
-[ HEAD prep,
+head-preposition := phrase &
+[ HEAD preposition,
   SPR < >,
   COMPS < >,
   MODS < > ].
 
-verbo-trans-n := verbo &
-[ COMPS < frase-nominal > ].
+verbp-tr-n := verbp &
+[ COMPS < head-noun > ].
 
-verbo-trans-p := verbo &
-[ COMPS < frase-prep > ].
+verbp-tr-p := verbp &
+[ COMPS < head-preposition > ].
 
-verbo-ditrans-pn := verbo &
-[ COMPS < frase-prep,
-          frase-nominal > ].
+verbp-ditr-pn := verbp &
+[ COMPS < head-preposition,
+          head-noun > ].
 
-verbo-ditrans-np := verbo &
-[ COMPS < [ HEAD sust ],
-          frase-prep > ].
+verbp-ditr-np := verbp &
+[ COMPS < [ HEAD noun ],
+          head-preposition > ].
 
-verbo-ditrans-pp := verbo &
-[ COMPS < frase-prep,
-          frase-prep > ].
+verbp-ditr-pp := verbp &
+[ COMPS < head-preposition,
+          head-preposition > ].
 
-verbo-ditrans-nn := verbo &
-[ COMPS < frase-nominal,
-          frase-nominal > ].
+verbp-ditr-nn := verbp &
+[ COMPS < head-noun,
+          head-noun > ].
 
-determinante := frase &
-[ HEAD det,
+detp := phrase &
+[ HEAD determiner,
   SPR < >,
   COMPS < >,
   MODS < > ].
 
-deteminante-singular-masculino := determinante &
-[ HEAD [ AGR [ NUM sg, GEN mas ]]].
+detp-sg-ml := detp &
+[ HEAD [ AGR [ NUM sg, GEN ml ]]].
 
-deteminante-singular-femenino := determinante &
-[ HEAD [ AGR [ NUM sg, GEN fem ]]].
+detp-sg-fm := detp &
+[ HEAD [ AGR [ NUM sg, GEN fm ]]].
 
-deteminante-plural-masculino := determinante &
-[ HEAD [ AGR [ NUM pl, GEN mas ]]].
+detp-pl-ml := detp &
+[ HEAD [ AGR [ NUM pl, GEN ml ]]].
 
-deteminante-plural-femenino := determinante &
-[ HEAD [ AGR [ NUM pl, GEN fem ]]].
+detp-pl-fm := detp &
+[ HEAD [ AGR [ NUM pl, GEN fm ]]].
 
-adverbio := frase &
-[ HEAD adv,
+advp := phrase &
+[ HEAD adverb,
   SPR < >,
   COMPS < >,
   MODS < > ].
 
-preposicion := frase &
-[ HEAD prep,
+prepp := phrase &
+[ HEAD preposition,
   SPR < >,
-  COMPS < [ HEAD sust, COMPS < > ] >,
+  COMPS < [ HEAD noun, COMPS < > ] >,
   MODS < > ].
 
-adjetivo := frase &
-[ HEAD adj,
+adjp := phrase &
+[ HEAD adjective,
   SPR < >,
   COMPS < >,
-  MODS < adverbio > ].
+  MODS < advp > ].
 
-adjetivo-singular-masculino := adjetivo &
-[ HEAD [ AGR [ NUM sg, GEN mas ]]].
+adjp-sg-ml := adjp &
+[ HEAD [ AGR [ NUM sg, GEN ml ]]].
 
-adjetivo-singular-femenino := adjetivo &
-[ HEAD [ AGR [ NUM sg, GEN fem ]]].
+adjp-sg-fm := adjp &
+[ HEAD [ AGR [ NUM sg, GEN fm ]]].
 
-adjetivo-plural-masculino := adjetivo &
-[ HEAD [ AGR [ NUM pl, GEN mas ]]].
+adjp-pl-ml := adjp &
+[ HEAD [ AGR [ NUM pl, GEN ml ]]].
 
-adjetivo-plural-femenino := adjetivo &
-[ HEAD [ AGR [ NUM pl, GEN fem ]]].
+adjp-pl-fm := adjp &
+[ HEAD [ AGR [ NUM pl, GEN fm ]]].
 
 ;;; Tipos basicos ;;;
 ;;;;;;;;;;;;;;;;;;;;;
