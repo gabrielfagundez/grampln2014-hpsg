@@ -57,8 +57,8 @@ agr-cat-g := agr-cat &
 
 agr-cat-pg := agr-cat-p & agr-cat-g.
 
-;;; Lexemas ;;;
-;;;;;;;;;;;;;;;
+;;; Partes de la oracion ;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 phrase := expression &
 [ ORTH string,
